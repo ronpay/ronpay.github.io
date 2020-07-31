@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Ronpay&#39;s Blog</title>
-  <icon>https://www.gravatar.com/avatar/7bc120e0d007cd0595e49ef27cf02b63</icon>
+  <icon>https://www.gravatar.com/avatar/21c9991fac13636f56078f411ee9fd11</icon>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="ronpay.xyz/"/>
-  <updated>2020-07-30T14:22:34.931Z</updated>
+  <updated>2020-07-31T01:05:31.247Z</updated>
   <id>ronpay.xyz/</id>
   
   <author>
     <name>Ronpay</name>
-    <email>sh3652@163.com</email>
+    <email>365296@gmail.com</email>
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="ronpay.xyz/2020/07/31/test/"/>
+    <id>ronpay.xyz/2020/07/31/test/</id>
+    <published>2020-07-31T01:05:31.000Z</published>
+    <updated>2020-07-31T01:05:31.247Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>2020嵌入式工作室招新Linux方向招新题</title>
