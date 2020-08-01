@@ -33,7 +33,7 @@
 <meta property="og:image" content="/.xyz/2020/08//Users/Hong/Documents/Markdown/%E5%9B%BE%E7%89%87/clip_image001.png">
 <meta property="og:image" content="/.xyz/2020/08//Users/Hong/Documents/Markdown/%E5%9B%BE%E7%89%87/%E4%B8%80%E8%88%AC%E9%A1%B9%E7%BA%A7%E6%95%B0%E6%95%9B%E6%95%A3%E6%80%A7%E7%9A%84%E5%88%A4%E5%88%AB%E8%BF%87%E7%A8%8B.png">
 <meta property="article:published_time" content="2020-08-01T09:13:45.000Z">
-<meta property="article:modified_time" content="2020-08-01T09:15:37.125Z">
+<meta property="article:modified_time" content="2020-08-01T09:24:28.814Z">
 <meta property="article:author" content="Ronpay">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -334,8 +334,8 @@
 <p><strong>莱布尼兹公式</strong><br>$$<br>\varphi’(x)=\dfrac{d}{dx}\int_{\alpha(x)}^{\beta(x)}f(x,y)dy=\int_{\alpha(x)}^{\beta(x)}f_x(x,y)dy+f[x,\beta(x)]\beta’(x)-f[x,\alpha(x)]\alpha’(x)<br>$$<br><strong>各条定理总结</strong>：求导与积分的顺序可对调，</p>
 <p>积分计算的例子：$I=\int_0^1\dfrac{x^b-x^a}{lnx}dx$</p>
 <h4 id="含参变量广义积分"><a href="#含参变量广义积分" class="headerlink" title="含参变量广义积分"></a>含参变量广义积分</h4><p><strong>各条定理总结</strong>：可交换积分顺序</p>
-<p><strong>欧拉-泊松积分</strong>$$J=\int^{+\infin}_0e^{-x^2}dx=\dfrac{\sqrt{\pi}}{2}$$</p>
-<p><strong>菲涅尔积分</strong>$J=\int_0^{+\infin}sinx^2dx=\dfrac{1}{2}\sqrt{\dfrac{\pi}{2}}$</p>
+<p><strong>欧拉-泊松积分</strong>$$J=\int^{+\infty}_0e^{-x^2}dx=\dfrac{\sqrt{\pi}}{2}$$</p>
+<p><strong>菲涅尔积分</strong>$J=\int_0^{+\infty}sinx^2dx=\dfrac{1}{2}\sqrt{\dfrac{\pi}{2}}$</p>
 <h2 id="第七章-多元向量值函数积分学"><a href="#第七章-多元向量值函数积分学" class="headerlink" title="第七章 多元向量值函数积分学"></a>第七章 多元向量值函数积分学</h2><h3 id="7-1第二类曲线积分"><a href="#7-1第二类曲线积分" class="headerlink" title="7.1第二类曲线积分"></a>7.1第二类曲线积分</h3><h4 id="第二类曲线积分的背景"><a href="#第二类曲线积分的背景" class="headerlink" title="第二类曲线积分的背景"></a>第二类曲线积分的背景</h4><p>求变力沿曲线所作的功</p>
 <p>记为$\int_L(F\cdot\tau_0)ds=\int_LF\cdot dr$。</p>
 <h4 id="第二类曲线积分的性质"><a href="#第二类曲线积分的性质" class="headerlink" title="第二类曲线积分的性质"></a>第二类曲线积分的性质</h4><ul>
@@ -361,7 +361,7 @@
 <h4 id="第二类曲面积分的计算（分面投影）"><a href="#第二类曲面积分的计算（分面投影）" class="headerlink" title="第二类曲面积分的计算（分面投影）"></a>第二类曲面积分的计算（分面投影）</h4><p>利用变量的对等性，$x,y,z$对等，可用一个替代。</p>
 <p>若曲面方程为$z=z(x,y),(x,y)\in D_{xy}$，则<br>$$<br>\iint_SR(x,y,z)dxdy=\pm\iint_{D_{sy}}(0,0,R(x,y,z(x,y)))\cdot (-z_x,-z_y,1)dxdy=\pm\iint_{D_{xy}}R(x,y,z(x,y))dxdy<br>$$<br>当曲面的侧与$z$轴的正向夹角成锐角时取正号，反之钝角取负号。</p>
 <p>当$y=y(z,x),x=(y,z)$的情况类似。</p>
-<h4 id="两类曲面积分之间的联系"><a href="#两类曲面积分之间的联系" class="headerlink" title="两类曲面积分之间的联系"></a>两类曲面积分之间的联系</h4><p>$$<br>\oiint{F\cdot d\vec{S}}=\oiint F\cdot n_0 dS<br>$$</p>
+<h4 id="两类曲面积分之间的联系"><a href="#两类曲面积分之间的联系" class="headerlink" title="两类曲面积分之间的联系"></a>两类曲面积分之间的联系</h4><p>$$<br>{\oiint}{F\cdot d\vec{S}}={\oiint} F\cdot n_0 dS<br>$$</p>
 <p>其中$n_0$为与曲面侧一致的单位法向量。</p>
 <p>$$<br>cos\alpha=\dfrac{\mp z_2}{\sqrt{1+z_x^2+z_y^2}},\iint_SP(x,y,z)dydz=\iint_SP(x,y,z)cos\alpha dS<br>$$</p>
 <p>其它情况类似。</p>
@@ -371,7 +371,7 @@
 <h4 id="格林公式"><a href="#格林公式" class="headerlink" title="格林公式"></a>格林公式</h4><p>定理1：设设闭区域$D$由分段光滑的曲线$L$围成函数，函数$P(x,y),Q(x,y)$在$D$上有<strong>一阶连续偏导数</strong>，则<br>$$<br>\oint_LPdx+Qdy=\iint_D(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y})dxdy<br>$$<br>其中$L$是$D$的正向边界曲线。</p>
 <p>实质：沟通了沿闭合曲线的积分与二重积分之间的联系。</p>
 <p>推论：设$D$是由分段光滑的曲线$L_1$与$L_2$围成的平面复连通区域，函数$P(x,y),Q(x,y)$在$D$上有一阶连续偏导数，则<br>$$<br>\iint_D(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y})dxdy=\oint_{L_1}Pdx+Qdy+\oint_{L_2}Pdx+Qdy<br>$$<br>特别地，当$\dfrac{\partial Q}{\partial x}=\dfrac{\partial P}{\partial y}$时，<br>$$<br>\oint_{L_1}Pdx+Qdy=-\oint_{L_2}Pdx+Qdy=\oint_{L_2-}Pdx+Qdy<br>$$</p>
-<h4 id="高斯公式"><a href="#高斯公式" class="headerlink" title="高斯公式"></a>高斯公式</h4><p>定理1：设空间闭区域$V$是由分片光滑的闭曲线$S$围成，函数$P(x,y,z),Q(x,y,z),R(x,y,z)$是$V$上有<strong>一阶连续偏导数</strong>，则有<br>$$<br>\iiint_V(\dfrac{\partial P}{\partial x}+\dfrac{\partial Q}{\partial y}+\dfrac{\partial R}{\partial z})dV=\oiint_SPdydz+Qdzdx+Rdxdy<br>$$<br>其中，$S$为$V$的边界曲面的外侧。</p>
+<h4 id="高斯公式"><a href="#高斯公式" class="headerlink" title="高斯公式"></a>高斯公式</h4><p>定理1：设空间闭区域$V$是由分片光滑的闭曲线$S$围成，函数$P(x,y,z),Q(x,y,z),R(x,y,z)$是$V$上有<strong>一阶连续偏导数</strong>，则有<br>$$<br>\iiint_V(\dfrac{\partial P}{\partial x}+\dfrac{\partial Q}{\partial y}+\dfrac{\partial R}{\partial z})dV={\oiint}_S Pdydz+Qdzdx+Rdxdy<br>$$<br>其中，$S$为$V$的边界曲面的外侧。</p>
 <p>实质：表达了空间闭区域上的三重积分与其边界曲面上的曲面积分之间的关系。</p>
 <p>高斯公式的使用条件</p>
 <ul>
@@ -397,37 +397,37 @@
 <p>散度：$divA=\dfrac{\partial P}{\partial x}+\dfrac{\partial Q}{\partial y}+\dfrac{\partial R}{\partial z}$</p>
 <p>旋度：$rotA=(\dfrac{\partial R}{\partial y}-\dfrac{\partial Q}{\partial z})i+(\dfrac{\partial P}{\partial z}-\dfrac{\partial R}{\partial x})j+(\dfrac{\partial Q}{\partial x}-\dfrac{\partial P}{\partial y})k$</p>
 <p>其中，$u=u(x,y,z),A=Pi+Qj+Rk$</p>
-<h2 id="第八章-无穷级数"><a href="#第八章-无穷级数" class="headerlink" title="第八章 无穷级数"></a>第八章 无穷级数</h2><h3 id="8-1常数项级数的概念"><a href="#8-1常数项级数的概念" class="headerlink" title="8.1常数项级数的概念"></a>8.1常数项级数的概念</h3><p>级数的定义：给定数列$u_1,u_2,…,u_n,…,$则由这个数列构成的表达式$u_1+u_2+u_3+…+u_n+…$称为无穷级数，简称级数，记为<br>$$<br>\sum_{n=1}^{\infin}u_n=u_1+u_2+u_3+…+u_n+…<br>$$<br>称每一项$u_n$为常数的级数$\sum_{n=1}^{\infin}u_n$为常数项级数。</p>
-<p>称每一项$u_n$为函数的级数$\sum_{n=1}^{\infin}u_n$为函数项级数。</p>
-<p>称级数$\sum_{n=1}^{\infin}u_n$的前n项之和$S_n$，为级数的部分和。</p>
+<h2 id="第八章-无穷级数"><a href="#第八章-无穷级数" class="headerlink" title="第八章 无穷级数"></a>第八章 无穷级数</h2><h3 id="8-1常数项级数的概念"><a href="#8-1常数项级数的概念" class="headerlink" title="8.1常数项级数的概念"></a>8.1常数项级数的概念</h3><p>级数的定义：给定数列$u_1,u_2,…,u_n,…,$则由这个数列构成的表达式$u_1+u_2+u_3+…+u_n+…$称为无穷级数，简称级数，记为<br>$$<br>\sum_{n=1}^{\infin}u_n=u_1+u_2+u_3+…+u_n+…<br>$$<br>称每一项$u_n$为常数的级数$\sum_{n=1}^{\infty}u_n$为常数项级数。</p>
+<p>称每一项$u_n$为函数的级数$\sum_{n=1}^{\infty}u_n$为函数项级数。</p>
+<p>称级数$\sum_{n=1}^{\infty}u_n$的前n项之和$S_n$，为级数的部分和。</p>
 <p>常用方法：裂项法</p>
-<h4 id="级数的基本性质"><a href="#级数的基本性质" class="headerlink" title="级数的基本性质"></a>级数的基本性质</h4><p>若级数$\sum_{n=1}^{\infin}u_n$收敛，则$\sum_{n=1}^{\infin}ku_n$也收敛。</p>
-<p>若两收敛级数$s=\sum_{n=1}^{\infin}u_n$,$\sigma=\sum_{n=1}^{\infin}v_n$，则级数$\sum_{n=1}^{\infin}{u_n\pm v_n}$收敛，其和为$s\pm\sigma$。</p>
+<h4 id="级数的基本性质"><a href="#级数的基本性质" class="headerlink" title="级数的基本性质"></a>级数的基本性质</h4><p>若级数$\sum_{n=1}^{\infty}u_n$收敛，则$\sum_{n=1}^{\infty}ku_n$也收敛。</p>
+<p>若两收敛级数$s=\sum_{n=1}^{\infty}u_n$,$\sigma=\sum_{n=1}^{\infty}v_n$，则级数$\sum_{n=1}^{\infty}{u_n\pm v_n}$收敛，其和为$s\pm\sigma$。</p>
 <p>等等…</p>
-<h4 id="级数收敛的必要条件"><a href="#级数收敛的必要条件" class="headerlink" title="级数收敛的必要条件"></a>级数收敛的必要条件</h4><p>若$n$无限增大时，他的一般项$u_n$趋于零，即级数$\sum_{n=1}^{\infin}u_n$收敛，则$lim_{n\to \infin}u_n=0$。</p>
+<h4 id="级数收敛的必要条件"><a href="#级数收敛的必要条件" class="headerlink" title="级数收敛的必要条件"></a>级数收敛的必要条件</h4><p>若$n$无限增大时，他的一般项$u_n$趋于零，即级数$\sum_{n=1}^{\infty}u_n$收敛，则$lim_{n\to \infty}u_n=0$。</p>
 <p>（应用）<strong>即</strong>：若一般项$u_n$不趋于零，则级数发散。</p>
 <h3 id="8-2常数项级数的判别法"><a href="#8-2常数项级数的判别法" class="headerlink" title="8.2常数项级数的判别法"></a>8.2常数项级数的判别法</h3><p>$$<br>\sum_{n=1}^{\infin}\dfrac{1}{n^2}=\dfrac{\pi^2}{6}<br>$$</p>
-<h4 id="正项级数与其审敛法"><a href="#正项级数与其审敛法" class="headerlink" title="正项级数与其审敛法"></a>正项级数与其审敛法</h4><p><strong>定义</strong>：若级数$\sum_{n=1}^{\infin}u_n$中各项均有$u_n\geq 0$，称此级数为正项级数。</p>
-<p><strong>性质</strong>：若$S_n$为有界数列，则$lim_{n\to \infin}S_n=S$，则收敛。</p>
-<p>若$S_n$为无界数列，则$lim_{n\to \infin}S_n=+\infin$，则发散。</p>
-<p><strong>定理</strong>：若$\sum_{n=1}^{\infin}u_n$为正项级数，则级数$\sum_{n=1}^{\infin}u_n$收敛的充分必要条件为它的部分和数列$S_n$有界。</p>
-<h5 id="比较审敛法"><a href="#比较审敛法" class="headerlink" title="比较审敛法"></a>比较审敛法</h5><p>设$\sum_{n=1}^{\infin}u_n$和$\sum_{n=1}^{\infin}v_n$均为正项级数，且$u_n\leq v_n$，若$\sum_{n=1}^{\infin}v_n$收敛，则$\sum_{n=1}^{\infin}u_n$收敛；若$\sum_{n=1}^{\infin}u_n$发散，则$\sum_{n=1}^{\infin}v_n$发散。</p>
+<h4 id="正项级数与其审敛法"><a href="#正项级数与其审敛法" class="headerlink" title="正项级数与其审敛法"></a>正项级数与其审敛法</h4><p><strong>定义</strong>：若级数$\sum_{n=1}^{\infty}u_n$中各项均有$u_n\geq 0$，称此级数为正项级数。</p>
+<p><strong>性质</strong>：若$S_n$为有界数列，则$lim_{n\to \infty}S_n=S$，则收敛。</p>
+<p>若$S_n$为无界数列，则$lim_{n\to \infty}S_n=+\infty$，则发散。</p>
+<p><strong>定理</strong>：若$\sum_{n=1}^{\infty}u_n$为正项级数，则级数$\sum_{n=1}^{\infty}u_n$收敛的充分必要条件为它的部分和数列$S_n$有界。</p>
+<h5 id="比较审敛法"><a href="#比较审敛法" class="headerlink" title="比较审敛法"></a>比较审敛法</h5><p>设$\sum_{n=1}^{\infty}u_n$和$\sum_{n=1}^{\infty}v_n$均为正项级数，且$u_n\leq v_n$，若$\sum_{n=1}^{\infty}v_n$收敛，则$\sum_{n=1}^{\infty}u_n$收敛；若$\sum_{n=1}^{\infty}u_n$发散，则$\sum_{n=1}^{\infty}v_n$发散。</p>
 <p>不便：须有参考级数。</p>
 <p>极限形式：</p>
-<p>设$\sum_{n=1}^{\infin}u_n$和$\sum_{n=1}^{\infin}v_n$均为正项级数，$v_n&gt;0$，若$lim_{n\to \infin}\dfrac{u_n}{v_n}=l$，</p>
+<p>设$\sum_{n=1}^{\infty}u_n$和$\sum_{n=1}^{\infty}v_n$均为正项级数，$v_n&gt;0$，若$lim_{n\to \infty}\dfrac{u_n}{v_n}=l$，</p>
 <ul>
-<li>当$0&lt;l&lt;+\infin$时，两级数有相同的敛散性。</li>
-<li>当$l=0$时，若$\sum_{n=1}^{\infin}v_n$收敛，则$\sum_{n=1}^{\infin}u_n$收敛。</li>
-<li>当$l=+\infin$时，若$\sum_{n=1}^{\infin}v_n$发散，则$\sum_{n=1}^{\infin}u_n$发散。</li>
+<li>当$0&lt;l&lt;+\infty$时，两级数有相同的敛散性。</li>
+<li>当$l=0$时，若$\sum_{n=1}^{\infty}v_n$收敛，则$\sum_{n=1}^{\infty}u_n$收敛。</li>
+<li>当$l=+\infty$时，若$\sum_{n=1}^{\infty}v_n$发散，则$\sum_{n=1}^{\infty}u_n$发散。</li>
 </ul>
 <p><strong>关键之处</strong>：找到合适的比较对象</p>
 <h5 id="3个重要的参考级数"><a href="#3个重要的参考级数" class="headerlink" title="3个重要的参考级数"></a>3个重要的参考级数</h5><ul>
-<li>调和级数：$\sum_{n=1}^{\infin}\dfrac{1}{n}$：发散。</li>
-<li>几何级数：$\sum_{n=1}^{\infin}aq^n$，$|q|\geq1$：发散；$|q|&lt;1$：收敛。</li>
-<li>p-级数：$\sum_{n=1}^{\infin}\dfrac{1}{n^p}$，$q&gt;1$：发散；$q\leq1$：收敛。</li>
+<li>调和级数：$\sum_{n=1}^{\infty}\dfrac{1}{n}$：发散。</li>
+<li>几何级数：$\sum_{n=1}^{\infty}aq^n$，$|q|\geq1$：发散；$|q|&lt;1$：收敛。</li>
+<li>p-级数：$\sum_{n=1}^{\infty}\dfrac{1}{n^p}$，$q&gt;1$：发散；$q\leq1$：收敛。</li>
 </ul>
 <p>均值不等式：$ab={a^2}+{b^2}$</p>
-<h5 id="比值审敛法（达朗贝尔判别法）"><a href="#比值审敛法（达朗贝尔判别法）" class="headerlink" title="比值审敛法（达朗贝尔判别法）"></a>比值审敛法（达朗贝尔判别法）</h5><p>设$\sum_{n=1}^\infin u_n$为正项级数，$u_n&gt;0$，若$lim_{n\to \infin}\dfrac{u_{n+1}}{u_n}=\rho$，则</p>
+<h5 id="比值审敛法（达朗贝尔判别法）"><a href="#比值审敛法（达朗贝尔判别法）" class="headerlink" title="比值审敛法（达朗贝尔判别法）"></a>比值审敛法（达朗贝尔判别法）</h5><p>设$\sum_{n=1}^\infty u_n$为正项级数，$u_n&gt;0$，若$lim_{n\to \infty}\dfrac{u_{n+1}}{u_n}=\rho$，则</p>
 <ul>
 <li>$\rho&lt;1$时级数收敛；</li>
 <li>$\rho&gt;1$时级数发散；</li>
@@ -438,7 +438,7 @@
 <li>比值审敛法优点: 不必找参考级数.</li>
 <li>比值审敛法的条件是充分而非必要的.</li>
 </ul>
-<h5 id="根值审敛法（Cauchy判别法）"><a href="#根值审敛法（Cauchy判别法）" class="headerlink" title="根值审敛法（Cauchy判别法）"></a>根值审敛法（Cauchy判别法）</h5><p>设$\sum_{n=1}^\infin u_n$为正项级数，如果$lim_{n\to \infin}\sqrt[n]{u_n}=\rho$，则</p>
+<h5 id="根值审敛法（Cauchy判别法）"><a href="#根值审敛法（Cauchy判别法）" class="headerlink" title="根值审敛法（Cauchy判别法）"></a>根值审敛法（Cauchy判别法）</h5><p>设$\sum_{n=1}^\infty u_n$为正项级数，如果$lim_{n\to \infty}\sqrt[n]{u_n}=\rho$，则</p>
 <ul>
 <li>$\rho&lt;1$时级数收敛；</li>
 <li>$\rho&gt;1$时级数发散；</li>
@@ -450,20 +450,20 @@
 <li>比值审敛法的条件是充分而非必要的.</li>
 </ul>
 <h4 id="交错级数及其审敛法"><a href="#交错级数及其审敛法" class="headerlink" title="交错级数及其审敛法"></a>交错级数及其审敛法</h4><p>定义：称正，负项交替出现的级数为交错级数.</p>
-<h5 id="定理（莱布尼兹判别式）"><a href="#定理（莱布尼兹判别式）" class="headerlink" title="定理（莱布尼兹判别式）"></a>定理（莱布尼兹判别式）</h5><p>若交错级数$\sum_{n=1}^\infin (-1)^{n-1}u_n$满足如下条件：</p>
+<h5 id="定理（莱布尼兹判别式）"><a href="#定理（莱布尼兹判别式）" class="headerlink" title="定理（莱布尼兹判别式）"></a>定理（莱布尼兹判别式）</h5><p>若交错级数$\sum_{n=1}^\infty (-1)^{n-1}u_n$满足如下条件：</p>
 <ul>
 <li>$u_n\geq u_{n+1}\geq0$</li>
-<li>$lim_{n\to \infin} u_n=0$</li>
+<li>$lim_{n\to \infty} u_n=0$</li>
 </ul>
-<p>则级数$\sum_{n=1}^\infin (-1)^{n-1}u_n$收敛，且其和$S\leq u_1$，其余项$R_n$的绝对值$|R_n|\leq u_{n+1}$</p>
+<p>则级数$\sum_{n=1}^\infty (-1)^{n-1}u_n$收敛，且其和$S\leq u_1$，其余项$R_n$的绝对值$|R_n|\leq u_{n+1}$</p>
 <h4 id="绝对收敛与条件收敛"><a href="#绝对收敛与条件收敛" class="headerlink" title="绝对收敛与条件收敛"></a>绝对收敛与条件收敛</h4><p>任意项级数：正项和负项任意出现的级数。</p>
-<h5 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h5><p>若$\sum_{n=1}^\infin |u_n|$收敛，则$\sum_{n=1}^\infin u_n$，称$\sum_{n=1}^\infin u_n$绝对收敛。</p>
+<h5 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h5><p>若$\sum_{n=1}^\infty |u_n|$收敛，则$\sum_{n=1}^\infty u_n$，称$\sum_{n=1}^\infty u_n$绝对收敛。</p>
 <p>定理的作用：从任意项级数-&gt;正项级数</p>
-<p><strong>绝对收敛</strong>定义：若$\sum_{n=1}^\infin |u_n|$收敛，称$\sum_{n=1}^\infin u_n$绝对收敛。</p>
-<p><strong>条件收敛</strong>定义：若$\sum_{n=1}^\infin |u_n|$发散，$\sum_{n=1}^\infin u_n$收敛，称$\sum_{n=1}^\infin u_n$条件收敛。</p>
+<p><strong>绝对收敛</strong>定义：若$\sum_{n=1}^\infty |u_n|$收敛，称$\sum_{n=1}^\infty u_n$绝对收敛。</p>
+<p><strong>条件收敛</strong>定义：若$\sum_{n=1}^\infty |u_n|$发散，$\sum_{n=1}^\infty u_n$收敛，称$\sum_{n=1}^\infty u_n$条件收敛。</p>
 <h5 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h5><p>绝对收敛级数的任一重排级数绝对收敛于原级数的和。</p>
 <p>（条件收敛不一定成立）</p>
-<h5 id="黎曼定理"><a href="#黎曼定理" class="headerlink" title="黎曼定理"></a>黎曼定理</h5><p>设级数$\sum_{n=1}^\infin u_n$条件收敛，任给$B$（有穷实数或$\pm\infin$），都有$\sum_{n=1}^\infin u_n$的一个重排$\sum_{n=1}^\infin u_n^<em>$，使得$B=\sum_{n=1}^\infin u_n^</em>$。</p>
+<h5 id="黎曼定理"><a href="#黎曼定理" class="headerlink" title="黎曼定理"></a>黎曼定理</h5><p>设级数$\sum_{n=1}^\infty u_n$条件收敛，任给$B$（有穷实数或$\pm\infty$），都有$\sum_{n=1}^\infty u_n$的一个重排$\sum_{n=1}^\infty u_n^<em>$，使得$B=\sum_{n=1}^\infty u_n^</em>$。</p>
 <h4 id="一般项级数的敛散性"><a href="#一般项级数的敛散性" class="headerlink" title="一般项级数的敛散性"></a>一般项级数的敛散性</h4><figure class="image-bubble">
                 <div class="img-lightbox">
                     <div class="overlay"></div>
@@ -472,14 +472,14 @@
                 <div class="image-caption">一般项级数敛散性的判别过程</div>
             </figure>
 
-<h3 id="8-3幂指数"><a href="#8-3幂指数" class="headerlink" title="8.3幂指数"></a>8.3幂指数</h3><h5 id="收敛点与收敛域"><a href="#收敛点与收敛域" class="headerlink" title="收敛点与收敛域"></a>收敛点与收敛域</h5><p>如果$x_0\in I$，且函数项级数$\sum_{n=1}^\infin u_n(x_0)$收敛，称$x_0$为级数$\sum_{n=1}^\infin u_n(x)$的收敛点，否则称为级数的发散点。级数$\sum_{n=1}^\infin u_n(x)$的所有收敛点的全体称为<strong>收敛域</strong>，所有发散点的全体称为<strong>发散域</strong>。</p>
-<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>称形如$\sum_{n=0}^\infin a_n(x-x_0)^n$的级数为幂函数。</p>
-<h5 id="定理1（Abel定理）"><a href="#定理1（Abel定理）" class="headerlink" title="定理1（Abel定理）"></a>定理1（Abel定理）</h5><p>若级数 $\sum_{n=0}^\infin a_n x^n$在$x=x_0(x_0\not =0)$点收敛，则它在满足不等式$|x|&lt;|x_0|$的一切$x$处绝对收敛；若级数 $\sum_{n=0}^\infin a_n x^n$在$x=x_0(x_0\not =0)$点发散，则它在满足不等式$|x|&gt;|x_0|$的一切$x$处发散。</p>
-<h5 id="定理2"><a href="#定理2" class="headerlink" title="定理2"></a>定理2</h5><p>若级数 $\sum_{n=0}^\infin a_n x^n$的所有系数$a_n\not =0$，设$lim_{n\to\infin}|\dfrac{a_{n+1}}{a_n}|=\rho(lim_{n\to\infin}\sqrt[n]{|a_n|}=\rho)$，则</p>
+<h3 id="8-3幂指数"><a href="#8-3幂指数" class="headerlink" title="8.3幂指数"></a>8.3幂指数</h3><h5 id="收敛点与收敛域"><a href="#收敛点与收敛域" class="headerlink" title="收敛点与收敛域"></a>收敛点与收敛域</h5><p>如果$x_0\in I$，且函数项级数$\sum_{n=1}^\infty u_n(x_0)$收敛，称$x_0$为级数$\sum_{n=1}^\infty u_n(x)$的收敛点，否则称为级数的发散点。级数$\sum_{n=1}^\infty u_n(x)$的所有收敛点的全体称为<strong>收敛域</strong>，所有发散点的全体称为<strong>发散域</strong>。</p>
+<h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>称形如$\sum_{n=0}^\infty a_n(x-x_0)^n$的级数为幂函数。</p>
+<h5 id="定理1（Abel定理）"><a href="#定理1（Abel定理）" class="headerlink" title="定理1（Abel定理）"></a>定理1（Abel定理）</h5><p>若级数 $\sum_{n=0}^\infty a_n x^n$在$x=x_0(x_0\not =0)$点收敛，则它在满足不等式$|x|&lt;|x_0|$的一切$x$处绝对收敛；若级数 $\sum_{n=0}^\infty a_n x^n$在$x=x_0(x_0\not =0)$点发散，则它在满足不等式$|x|&gt;|x_0|$的一切$x$处发散。</p>
+<h5 id="定理2"><a href="#定理2" class="headerlink" title="定理2"></a>定理2</h5><p>若级数 $\sum_{n=0}^\infty a_n x^n$的所有系数$a_n\not =0$，设$lim_{n\to\infty}|\dfrac{a_{n+1}}{a_n}|=\rho(lim_{n\to\infty}\sqrt[n]{|a_n|}=\rho)$，则</p>
 <ul>
 <li>当$\rho\not =0$时，$R=\dfrac{1}{\rho}$；</li>
-<li>当$\rho =0$时，$R=+\infin$；</li>
-<li>当$\rho =+\infin$时，$R=0$。</li>
+<li>当$\rho =0$时，$R=+\infty$；</li>
+<li>当$\rho =+\infty$时，$R=0$。</li>
 </ul>
 <h5 id="和函数的分析运算性质"><a href="#和函数的分析运算性质" class="headerlink" title="和函数的分析运算性质"></a>和函数的分析运算性质</h5><ul>
 <li>极限运算与求和运算可交换顺序；</li>
@@ -505,7 +505,7 @@
 <h3 id="8-4函数展开成幂级数"><a href="#8-4函数展开成幂级数" class="headerlink" title="8.4函数展开成幂级数"></a>8.4函数展开成幂级数</h3><h4 id="泰勒级数"><a href="#泰勒级数" class="headerlink" title="泰勒级数"></a>泰勒级数</h4><h5 id="定理1"><a href="#定理1" class="headerlink" title="定理1"></a>定理1</h5><p>设函数$f(x)$ 在$x_0$的某个邻域U$(x_0,\delta_0$)内具有任意阶导数，则函数f(x)在该点邻域内能展开成泰勒级数的充要条件是$f(x)$的泰勒公式中的余项$R_n(x)$满足<br>$$<br>lim_{n\to\infin}R_n(x)=0;\forall x\in N(x_0,\delta_0)<br>$$</p>
 <h5 id="定理2-1"><a href="#定理2-1" class="headerlink" title="定理2"></a>定理2</h5><p>如果$f(x)$在区间$(-R+x_0,R+x_0)$能展开成泰勒级数<br>$$<br>f(x)=\sum_{n=0}^\infin \dfrac{f^{(n)}(x_0)}{n!}(x-x_0)^n<br>$$<br>则右端的幂级数是唯一的。</p>
 <h4 id="函数展开成幂级数"><a href="#函数展开成幂级数" class="headerlink" title="函数展开成幂级数"></a>函数展开成幂级数</h4><ul>
-<li>直接法（泰勒级数法）步骤：求$a_n$，讨论$lim_{n\to\infin}R_n(x)=0$，写出$f(x)$。</li>
+<li>直接法（泰勒级数法）步骤：求$a_n$，讨论$lim_{n\to\infty}R_n(x)=0$，写出$f(x)$。</li>
 <li>间接法，根据唯一性，利用常见展开式，通过变量代换，四则运算，恒等变形，逐项求导，逐项积分等方法，求展开式。</li>
 </ul>
 <h3 id="8-5幂级数的应用"><a href="#8-5幂级数的应用" class="headerlink" title="8.5幂级数的应用"></a>8.5幂级数的应用</h3><h4 id="欧拉公式"><a href="#欧拉公式" class="headerlink" title="欧拉公式"></a>欧拉公式</h4><p>$$<br>e^{ix}=cosx+isinx<br>$$</p>
@@ -536,7 +536,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-01T09:15:37.125Z" itemprop="dateUpdated">2020-08-01 17:15:37</time>
+    Last updated: <time datetime="2020-08-01T09:24:28.814Z" itemprop="dateUpdated">2020-08-01 17:24:28</time>
 </span><br>
 
 
