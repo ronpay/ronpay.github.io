@@ -29,7 +29,7 @@
 <meta property="og:description" content="(版权所有，禁止转载) (版权所有，禁止转载) (版权所有，禁止转载) (公式有点小问题，有空再修改) 第1章 集合论空集 空集是一切集合的子集。 空集值是绝对唯一的.  集合基数集合$A$中元素的数目称为集合$A$的基数，记为$|A|$。 m元子集如果一个集合$A$含有$n$个元素，则称集合$A$为$n$元集，称$A$的含有$m$个$(0≤m≤n)$元素的子集为$A$的$m$元子集。 幂集设$A">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-31T02:31:36.000Z">
-<meta property="article:modified_time" content="2020-08-01T13:31:28.443Z">
+<meta property="article:modified_time" content="2020-08-02T02:35:26.855Z">
 <meta property="article:author" content="Ronpay">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -202,7 +202,7 @@
 <li>吸收律:  $A∩(A∪B)=A$; $A∪(A∩B)=A$；</li>
 <li>DeMorgan律：$\overline{A∪B}=\overline{A}∩\overline{B}$，$\overline{A∩B}=\overline{A}∪\overline{B}$</li>
 <li>结合律：$A∪(B∪C)=(A∪B)∪C$；<br>$A∩(B∩C)=(A∩B)∩C$；</li>
-<li>分配律：$A∩(B∪C)=(A∩B)∪(A∩C)$<pre><code>$A∪(B∩C)=(A∪B)∩(A∪C)$</code></pre></li>
+<li>分配律：$A∩(B∪C)=(A∩B)∪(A∩C)$;$A∪(B∩C)=(A∪B)∩(A∪C)$</li>
 </ul>
 <h3 id="第2章-计数问题"><a href="#第2章-计数问题" class="headerlink" title="第2章 计数问题"></a>第2章 计数问题</h3><h4 id="鸽笼原理"><a href="#鸽笼原理" class="headerlink" title="鸽笼原理"></a>鸽笼原理</h4><p>若有$n+1$只鸽子住进$n$个鸽笼，则有一个鸽笼至少住进$2$只鸽子。</p>
 <h3 id="第3章-命题逻辑"><a href="#第3章-命题逻辑" class="headerlink" title="第3章 命题逻辑"></a>第3章 命题逻辑</h3><h4 id="基本等价公式"><a href="#基本等价公式" class="headerlink" title="基本等价公式"></a>基本等价公式</h4><p>设$G，H，S$是任何的公式，则：</p>
@@ -268,7 +268,7 @@
 <p>若$R, S$是反自反的，则$R^{-1}, R∪S, R∩S, RoS$也是反自反的</p>
 <p>若$R,S$是对称的，则$R^{-1},R∪S,R∩S,RoS$也是对称的</p>
 <p>若$R,S$是反对称的，则$R^{-1}, R∩S, RoS$也是反对称的</p>
-<p>若$R,S$是传递的，则$R{-1}, R∩S$也是传递的</p>
+<p>若$R,S$是传递的，则$R^{-1}, R∩S$也是传递的</p>
 <h4 id="关系的闭包"><a href="#关系的闭包" class="headerlink" title="关系的闭包"></a>关系的闭包</h4><p>设$R$是定义在$A$上的关系，若存在$A$上的另一个关系$R′$，使得$R\subseteq R′$，满足：</p>
 <p>1.$R′$是自反的（对称的、或传递的）；</p>
 <p>2.任何自反的（对称的、或传递的）关系$R〞$，如果$R\subseteq R$〞，就有$R′\subseteq R〞$，</p>
@@ -290,8 +290,7 @@
 <p>偏序“$≤$”的逆关系“$≤-1$”也是一个偏序，我们用“$≥$”表示，读作“大于等于”；<br>$(≤-I_A)$为$A$上的拟序关系，$(＜∪I_A)$为$A$上的偏序关系。 </p>
 <h4 id="哈斯图"><a href="#哈斯图" class="headerlink" title="哈斯图"></a>哈斯图</h4><ul>
 <li>用小圆圈或点表示A中的元素，省掉关系图中所有的环；                       （因自反性)</li>
-<li>对任意$x, y∈A$，若$x＜y$，则将$x$画在$y$的下方，可省掉关系图中所有边的箭头；（因反对称性）<br>对任意$x, y∈$A，若$x＜y$，且不存在$z∈A$，使得</li>
-<li>$x＜z,  z＜y$，则$x$与$y$之间用一条线相连，否则<br>无线相连。（因传递性）</li>
+<li>对任意$x, y∈A$，若$x＜y$，则将$x$画在$y$的下方，可省掉关系图中所有边的箭头；（因反对称性）<br>对任意$x, y∈$A，若$x＜y$，且不存在$z∈A$，使得$x＜z,  z＜y$，则$x$与$y$之间用一条线相连，否则无线相连。（因传递性）</li>
 </ul>
 <h4 id="偏序集的特殊元素"><a href="#偏序集的特殊元素" class="headerlink" title="偏序集的特殊元素"></a>偏序集的特殊元素</h4><p>设$&lt;A, ≤&gt;$是偏序集，$B$是$A$的任何一个子集。若存在元素$a∈A$，使得</p>
 <ul>
@@ -312,8 +311,9 @@
 <li>若$f$是满射且是单射，则称$f$为从$A$到$B$的双射</li>
 <li>当$A$上的函数$f$是双射时，称$f$为变换</li>
 </ul>
-<h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><p>设$A, B$是有限集合，且$|A| = |B|$，$f$是$A$到$B$的函数，则$f$是单射当且仅当f是满射。</p>
-<h4 id="函数的运算"><a href="#函数的运算" class="headerlink" title="函数的运算"></a>函数的运算</h4><p>考虑$f: A→B，g: B→C$是两个函数，则fog = { &lt;x, z&gt; | x∈A{∧}z∈C{∧}(\exist y)(y∈B{∧}&lt;x, y&gt;∈f{∧}&lt;y, z&gt;∈g)从$A$到$C$的函数，记为$fog: A→C$ ，称为函数$f$与$g$的复合函数。对任意$x∈A，fog(x) = g(f(x))$。</p>
+<h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><p>设$A, B$是有限集合，且$|A| = |B|$，$f$是$A$到$B$的函数，则$f$是单射当且仅当$f$是满射。</p>
+<h4 id="函数的运算"><a href="#函数的运算" class="headerlink" title="函数的运算"></a>函数的运算</h4><p>考虑$f: A→B，g: B→C$是两个函数，则 $fog = { &lt;x, z&gt; | x∈A{∧}z∈C{∧}(\exists   y)(y∈B{∧}&lt;x, y&gt;∈f{∧}&lt;y, z&gt;∈g)$(公式无法渲染，忽略了)</p>
+<p>从$A$到$C$的函数，记为$fog: A→C$ ，称为函数$f$与$g$的复合函数。对任意$x∈A，fog(x) = g(f(x))$。</p>
 <h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h4><p>若$f$是$A$到$B$的双射，则$f$的逆函数$f^{-1}$也是$B$到$A$的双射。</p>
 <h3 id="第9章-图"><a href="#第9章-图" class="headerlink" title="第9章 图"></a>第9章 图</h3><h4 id="特殊图"><a href="#特殊图" class="headerlink" title="特殊图"></a>特殊图</h4><ul>
 <li>仅由孤立结点组成的图称为<strong>零图</strong>(Null Graph)</li>
@@ -327,13 +327,13 @@
 <li>无环的线图称为简单图(Simple Graph)</li>
 </ul>
 <h4 id="子图和补图"><a href="#子图和补图" class="headerlink" title="子图和补图"></a>子图和补图</h4><ul>
-<li><p>若V1 =V，E1包含于 E，则称G1是G的<strong>生成子图</strong>(Spanning Subgraph)</p>
+<li><p>若$V1 =V$，$E_1$包含于 $E$，则称$G_1$是$G$的<strong>生成子图</strong>(Spanning Subgraph)</p>
 </li>
-<li><p>设V2 包含于V且V2 ≠ 空集，以V2为结点集，以两个端点均在V2中的边的全体为边集的G的子图，称为V2导出的G的子图，简称V2的<strong>导出子图</strong>(Induced Subgraph)</p>
+<li><p>设$V_2$ 包含于$V$且$V_2$ ≠ 空集，以$V_2$为结点集，以两个端点均在$V_2$中的边的全体为边集的G的子图，称为$V_2$导出的$G$的子图，简称$V_2$的<strong>导出子图</strong>(Induced Subgraph)</p>
 </li>
-<li><p>设$G = &lt;V, E&gt;$为一个具有n个结点的无向简单图，如果G中任意两个结点间都有边相连，则称G为<strong>无向完全图</strong>(Undirected Complete Graph)，简称G为完全图(Complete Graph)，记为Kn。</p>
+<li><p>设$G = &lt;V, E&gt;$为一个具有$n$个结点的无向简单图，如果$G$中任意两个结点间都有边相连，则称G为<strong>无向完全图</strong>(Undirected Complete Graph)，简称$G$为完全图(Complete Graph)，记为$K_n$。</p>
 </li>
-<li><p>设$G = &lt;V, E&gt;$为一个具有n个结点的有向简单图，如果G中任意两个结点间都有两条方向相反的有向边相连，则称G为<strong>有向完全图</strong>(directed Complete Graph)，在不发生误解的情况下，也记为Kn。    </p>
+<li><p>设$G = &lt;V, E&gt;$为一个具有$n$个结点的有向简单图，如果$G$中任意两个结点间都有两条方向相反的有向边相连，则称$G$为<strong>有向完全图</strong>(directed Complete Graph)，在不发生误解的情况下，也记为$K_n$。    </p>
 </li>
 </ul>
 <h4 id="结点的度数与握手定理"><a href="#结点的度数与握手定理" class="headerlink" title="结点的度数与握手定理"></a>结点的度数与握手定理</h4><p>对于图G = &lt;V, E&gt;，度数为1的结点称为<strong>悬挂结点</strong>(Hanging Point)，以悬挂结点为端点的边称为<strong>悬挂边</strong>(Hanging Edge)。 </p>
@@ -411,7 +411,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-01T13:31:28.443Z" itemprop="dateUpdated">2020-08-01 21:31:28</time>
+    Last updated: <time datetime="2020-08-02T02:35:26.855Z" itemprop="dateUpdated">2020-08-02 10:35:26</time>
 </span><br>
 
 
