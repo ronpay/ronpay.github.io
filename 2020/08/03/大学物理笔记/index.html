@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+
+    
+
+    
+
+
+
+    <meta charset="utf-8">
+    
+    
+    
+    
+    <title>大学物理笔记 | Ronpay&#39;s Blog</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="theme-color" content="#3F51B5">
+    
+    
+    <meta name="keywords" content="Math">
+    <meta name="description" content="大学物理笔记力学刚体力学力矩的瞬时效应——刚体转动定理转动惯量$$I&#x3D;\int_V{r^2dm}&#x3D;r^2m$$ 力矩$$\vec{M}&#x3D;\vec{r}\times\vec{F}&#x3D;I\vec{\beta}$$其中，$\beta$是角加速。 平行轴定理：$$I&#x3D;I_c+ml^2$$其中，$I_c$是转轴过质心的转动惯量。$l$是与过质心转轴相距为$l$且与之平行的另一转轴。  垂直轴定理：$$I&#x3D;I_">
+<meta property="og:type" content="article">
+<meta property="og:title" content="大学物理笔记">
+<meta property="og:url" content="ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/index.html">
+<meta property="og:site_name" content="Ronpay&#39;s Blog">
+<meta property="og:description" content="大学物理笔记力学刚体力学力矩的瞬时效应——刚体转动定理转动惯量$$I&#x3D;\int_V{r^2dm}&#x3D;r^2m$$ 力矩$$\vec{M}&#x3D;\vec{r}\times\vec{F}&#x3D;I\vec{\beta}$$其中，$\beta$是角加速。 平行轴定理：$$I&#x3D;I_c+ml^2$$其中，$I_c$是转轴过质心的转动惯量。$l$是与过质心转轴相距为$l$且与之平行的另一转轴。  垂直轴定理：$$I&#x3D;I_">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2020-08-03T00:45:58.000Z">
+<meta property="article:modified_time" content="2020-08-03T00:46:38.845Z">
+<meta property="article:author" content="Ronpay">
+<meta property="article:tag" content="Math">
+<meta name="twitter:card" content="summary">
+    
+        <link rel="alternate" type="application/atom+xml" title="Ronpay&#39;s Blog" href="/atom.xml">
+    
+    <link rel="shortcut icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="//unpkg.com/hexo-theme-material-indigo@latest/css/style.css">
+    <script>window.lazyScripts=[]</script>
+
+    <!-- custom head -->
+    
+
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    <div id="loading" class="active"></div>
+
+    <aside id="menu" class="hide" >
+  <div class="inner flex-row-vertical">
+    <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menu-off">
+        <i class="icon icon-lg icon-close"></i>
+    </a>
+    <div class="brand-wrap" style="background-image:url(/img/brand.jpg)">
+      <div class="brand">
+        <a href="/" class="avatar waves-effect waves-circle waves-light">
+          <img src="/img/avatar.jpg">
+        </a>
+        <hgroup class="introduce">
+          <h5 class="nickname">Ronpay</h5>
+          <a href="mailto:365296@gmail.com" title="365296@gmail.com" class="mail">365296@gmail.com</a>
+        </hgroup>
+      </div>
+    </div>
+    <div class="scroll-wrap flex-col">
+      <ul class="nav">
+        
+            <li class="waves-block waves-effect">
+              <a href="/"  >
+                <i class="icon icon-lg icon-home"></i>
+                Home
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/archives"  >
+                <i class="icon icon-lg icon-archives"></i>
+                Archives
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="/tags"  >
+                <i class="icon icon-lg icon-tags"></i>
+                Tags
+              </a>
+            </li>
+        
+            <li class="waves-block waves-effect">
+              <a href="https://github.com/ronpay" target="_blank" >
+                <i class="icon icon-lg icon-github"></i>
+                Github
+              </a>
+            </li>
+        
+      </ul>
+    </div>
+  </div>
+</aside>
+
+    <main id="main">
+        <header class="top-header" id="header">
+    <div class="flex-row">
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light on" id="menu-toggle">
+          <i class="icon icon-lg icon-navicon"></i>
+        </a>
+        <div class="flex-col header-title ellipsis">大学物理笔记</div>
+        
+        <div class="search-wrap" id="search-wrap">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+                <i class="icon icon-lg icon-chevron-left"></i>
+            </a>
+            <input type="text" id="key" class="search-input" autocomplete="off" placeholder="Search">
+            <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="search">
+                <i class="icon icon-lg icon-search"></i>
+            </a>
+        </div>
+        
+        
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="menuShare">
+            <i class="icon icon-lg icon-share-alt"></i>
+        </a>
+        
+    </div>
+</header>
+<header class="content-header post-header">
+
+    <div class="container fade-scale">
+        <h1 class="title">大学物理笔记</h1>
+        <h5 class="subtitle">
+            
+                <time datetime="2020-08-03T00:45:58.000Z" itemprop="datePublished" class="page-time">
+  2020-08-03
+</time>
+
+
+            
+        </h5>
+    </div>
+
+    
+
+
+</header>
+
+
+<div class="container body-wrap">
+    
+    <aside class="post-widget">
+        <nav class="post-toc-wrap post-toc-shrink" id="post-toc">
+            <h4>TOC</h4>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#大学物理笔记"><span class="post-toc-text">大学物理笔记</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#力学"><span class="post-toc-text">力学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#刚体力学"><span class="post-toc-text">刚体力学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#力矩的瞬时效应——刚体转动定理"><span class="post-toc-text">力矩的瞬时效应——刚体转动定理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#力矩的时间累积效应——角动量定理"><span class="post-toc-text">力矩的时间累积效应——角动量定理</span></a></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#力矩的空间累积效应——刚体的机械能守恒定律"><span class="post-toc-text">力矩的空间累积效应——刚体的机械能守恒定律</span></a></li></ol></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#振动力学"><span class="post-toc-text">振动力学</span></a></li></ol></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#电磁学"><span class="post-toc-text">电磁学</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#符号详解"><span class="post-toc-text">符号详解</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#静电场"><span class="post-toc-text">静电场</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#稳恒电场"><span class="post-toc-text">稳恒电场</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#毕奥—萨伐尔定律"><span class="post-toc-text">毕奥—萨伐尔定律</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#安培环路定律"><span class="post-toc-text">安培环路定律</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#有磁介质的安培环路定理"><span class="post-toc-text">有磁介质的安培环路定理</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#动生电动势"><span class="post-toc-text">动生电动势</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#感生电动势"><span class="post-toc-text">感生电动势</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#自感"><span class="post-toc-text">自感</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#互感"><span class="post-toc-text">互感</span></a></li><li class="post-toc-item post-toc-level-5"><a class="post-toc-link" href="#线圈的磁能"><span class="post-toc-text">线圈的磁能</span></a></li></ol></li><li class="post-toc-item post-toc-level-4"><a class="post-toc-link" href="#位移电流"><span class="post-toc-text">位移电流</span></a></li></ol></li></ol></li></ol></li></ol>
+        </nav>
+    </aside>
+
+
+<article id="post-大学物理笔记"
+  class="post-article article-type-post fade" itemprop="blogPost">
+
+    <div class="post-card">
+        <h1 class="post-card-title">大学物理笔记</h1>
+        <div class="post-meta">
+            <time class="post-time" title="2020-08-03 08:45:58" datetime="2020-08-03T00:45:58.000Z"  itemprop="datePublished">2020-08-03</time>
+
+            
+
+
+            
+
+        </div>
+        <div class="post-content" id="post-content" itemprop="postContent">
+            <h1 id="大学物理笔记"><a href="#大学物理笔记" class="headerlink" title="大学物理笔记"></a>大学物理笔记</h1><h2 id="力学"><a href="#力学" class="headerlink" title="力学"></a>力学</h2><h3 id="刚体力学"><a href="#刚体力学" class="headerlink" title="刚体力学"></a>刚体力学</h3><h4 id="力矩的瞬时效应——刚体转动定理"><a href="#力矩的瞬时效应——刚体转动定理" class="headerlink" title="力矩的瞬时效应——刚体转动定理"></a>力矩的瞬时效应——刚体转动定理</h4><p>转动惯量<br>$$<br>I=\int_V{r^2dm}=r^2m<br>$$</p>
+<p>力矩<br>$$<br>\vec{M}=\vec{r}\times\vec{F}=I\vec{\beta}<br>$$<br>其中，$\beta$是角加速。</p>
+<p>平行轴定理：<br>$$<br>I=I_c+ml^2<br>$$<br>其中，$I_c$是转轴过质心的转动惯量。$l$是与过质心转轴相距为$l$且与之平行的另一转轴。 </p>
+<p>垂直轴定理：<br>$$<br>I=I_x+I_y<br>$$<br>即一个平面薄板刚体对垂直于平面的任一转轴的转动惯量，等于刚体对在平面内并与该垂直轴相交的任二正交轴转动惯量之和。 </p>
+<h4 id="力矩的时间累积效应——角动量定理"><a href="#力矩的时间累积效应——角动量定理" class="headerlink" title="力矩的时间累积效应——角动量定理"></a>力矩的时间累积效应——角动量定理</h4><p>冲量矩:<br>$$<br>J=\int{Mdt}<br>$$<br>角动量：<br>$$<br>L=I\omega=mr\times{v}<br>$$<br>角动量守恒：当外力冲量矩的矢量和为零时，刚体的角动量保持不变，即<br>$$<br>I_2\omega_2=I_1\omega_1<br>$$</p>
+<p>摩擦力矩的角动量不一定守恒。</p>
+<p>在有心力作用下，角动量守恒。</p>
+<p>所有有心力都是保守力，机械能守恒。</p>
+<h4 id="力矩的空间累积效应——刚体的机械能守恒定律"><a href="#力矩的空间累积效应——刚体的机械能守恒定律" class="headerlink" title="力矩的空间累积效应——刚体的机械能守恒定律"></a>力矩的空间累积效应——刚体的机械能守恒定律</h4><p>力矩的功：$A=\int{Md\theta}$</p>
+<p>动能：$E_k=\frac{1}{2}I\omega^2$</p>
+<h3 id="振动力学"><a href="#振动力学" class="headerlink" title="振动力学"></a>振动力学</h3><p>振动方程$y(t)=Acos(\omega t-\phi)$</p>
+<p>波动方程$\phi(x,t)=Acos[\omega(t-\dfrac{x}{v})+\varphi]=Acos(\omega t-\dfrac{\omega }{v}x+\varphi)=Acos(\omega t-kx+\phi)$</p>
+<p>其中$k=\dfrac{\omega}{v}=\dfrac{2\pi}{\lambda}$</p>
+<h2 id="电磁学"><a href="#电磁学" class="headerlink" title="电磁学"></a>电磁学</h2><h3 id="符号详解"><a href="#符号详解" class="headerlink" title="符号详解"></a>符号详解</h3><p>电流密度矢量：$j=\dfrac{I}{S}$</p>
+<p>电位移矢量：$D=\varepsilon E$</p>
+<h3 id="静电场"><a href="#静电场" class="headerlink" title="静电场"></a>静电场</h3><p>$k=\dfrac{1}{4\pi\varepsilon_0}$</p>
+<p>$e=1.602\times10^{-19}C$</p>
+<p>$\vec{F}=\dfrac{1}{4\pi \varepsilon_0}\dfrac{Q_1Q_2}{r^2}\vec{r_0}$</p>
+<p>电偶极子中垂线上任意点的场强：$\vec E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{-\vec p} {r^3}$。</p>
+<p>线密度$\mu$，面密度$\sigma$，体密度$\rho$</p>
+<p>电通量：通过某一面积的电力线条数</p>
+<p>$\phi=\int_S\vec{E}\cdot d\vec{s}=\int_sEdscos\theta$</p>
+<p>高斯定理：<br>$$<br>\oint_s\vec{E}\cdot d\vec{s}=\dfrac{1}{\varepsilon_0}\sum_{inside,i}q_i=\dfrac{1}{\varepsilon_0}\int_V \rho dV<br>$$<br>求场强：</p>
+<ul>
+<li>用库仑公式积分</li>
+<li>用高斯公式算</li>
+<li>结合上述两种方法</li>
+</ul>
+<p>常用电场强度：</p>
+<ul>
+<li>电偶极子中垂线上任意点的场强：$\vec E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{-\vec p} {r^3}$</li>
+<li>电荷均匀分布的带电圆盘轴线上的电场强度：$E=\dfrac{\sigma}{2\varepsilon_0}(1-\dfrac{x}{r^2+x^2})$</li>
+<li>电荷均匀分布的无限大平面轴线上的电场强度：$E=\dfrac{\sigma}{2\varepsilon_0}$</li>
+<li>电荷均匀分布的带电圆环轴线上的电场强度：$E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{qx}{(x^2+r^2)^{\frac{3}{2}}}$</li>
+</ul>
+<p>电势：$U_a=\dfrac{E_a}{q}=\int_a^b\vec{E}\cdot d\vec{l}$</p>
+<p>求电势：</p>
+<ul>
+<li><p>点电荷微元求解法：$U_a=\int_a^b\dfrac{1}{4\pi \varepsilon_0}\dfrac{dq}{r}$</p>
+</li>
+<li><p>电势定义求解方法：场强沿积分路径积分</p>
+</li>
+</ul>
+<p>静电平衡导体空腔场强分布：$E=\dfrac{\sigma}{\varepsilon_0}$</p>
+<p><del>极化强度矢量：单位体积内分子电偶极矩的矢量和</del><br>$$<br>\vec{p}=\dfrac{\sum_i\vec{p_i}}{\Delta V}<br>$$<br><del>极化强度的实验定律：$\vec{p}=\varepsilon_0\chi_e\vec{E}$</del></p>
+<p><del>$\chi_e$介质极化率</del></p>
+<p>$\varepsilon$=$\varepsilon_0 \varepsilon_r$</p>
+<p>其中，$\varepsilon_r$为相对介电常数</p>
+<p><strong>~~介质中的高斯定理</strong>~~<br>$$<br>q_p=-\oiint_s\vec{P}\cdot d\vec{s}<br>$$</p>
+<p>$$<br>\oint_s{(\vec{E_f}+\vec{E_p})}\cdot d\vec{s}=\dfrac{q_f+q_p}{\varepsilon_0}<br>$$</p>
+<p><del>得到：</del><br>$$<br>\oint_s\vec{E}\cdot d\vec{s}=\dfrac{q_f}{\varepsilon_0}-\dfrac{1}{\varepsilon_0}\oint_s\vec{P}\cdot d\vec{s}<br>$$<br><strong>电位移矢量</strong></p>
+<p>$\vec{D}=\varepsilon_0\vec{E}+\vec{P}$</p>
+<p>$\vec{D}=\varepsilon_0\varepsilon_r\vec{E}=\varepsilon\vec{E}$<br>$$<br>\oint_S\vec{D}\cdot d\vec{S}=\sum_{S内}q_0<br>$$<br>称为电介质中的高斯定理 <strong>——</strong> 电位移矢量通过静电场中任意封闭曲面的通量等于曲面内自由电荷的代数和。</p>
+<h3 id="稳恒电场"><a href="#稳恒电场" class="headerlink" title="稳恒电场"></a>稳恒电场</h3><h5 id="毕奥—萨伐尔定律"><a href="#毕奥—萨伐尔定律" class="headerlink" title="毕奥—萨伐尔定律"></a>毕奥—萨伐尔定律</h5><p>$$<br>d\vec{B}=\dfrac{\mu_0}{4\pi}\dfrac{Idl\times\vec{e_r}}{r^2}​<br>$$</p>
+<p>其中，$Idl$表示电流方向的电流微元，$r$距离电流微元的位矢。</p>
+<p>无限长直导线的磁场分布：$B=\dfrac{\mu_0 I}{4\pi a}{cos\theta_1-cos\theta_2}$</p>
+<p>环形电流在轴线上的磁场分布：$B=\dfrac{\mu_0}{4\pi}\dfrac{2\pi I R^2}{(R^2+x^2)^\frac{3}{2}}$</p>
+<p>无限长导线沿磁力线闭合回路积分值：$\oint_l\vec{B}\cdot d\vec{l}=\mu_0I$</p>
+<h5 id="安培环路定律"><a href="#安培环路定律" class="headerlink" title="安培环路定律"></a>安培环路定律</h5><p>$$<br>\oint_l\vec{B}\cdot dl=\mu_0\sum I_内<br>$$</p>
+<p>洛伦兹力<br>$$<br>\vec{F}=q\vec{v}\times\vec{B}<br>$$</p>
+<p>安培定律<br>$$<br>\vec{F}=\int Id\vec{l}\times\vec{B}<br>$$</p>
+<p>磁场对线圈力矩</p>
+<p>$$<br>\vec{M}=\vec{p_m}\times\vec{B};M=p_m\cdot B\sin\varphi<br>$$</p>
+<p>其中，$\vec{p_m}=IS\vec{n}$，$S$为线圈的面积。</p>
+<h5 id="有磁介质的安培环路定理"><a href="#有磁介质的安培环路定理" class="headerlink" title="有磁介质的安培环路定理"></a>有磁介质的安培环路定理</h5><p>$$<br>\oint_l{\vec{H}\cdot d\vec{l}}=\sum I_{o内}<br>$$</p>
+<p>其中，$\vec{H}=\dfrac{\vec{B}}{\mu_0}-\vec{M}$（磁场强度矢量）</p>
+<h5 id="动生电动势"><a href="#动生电动势" class="headerlink" title="动生电动势"></a>动生电动势</h5><p>$$<br>\varepsilon_i=\int_a^b d\varepsilon_i=\int_a^b(\vec{v}\times\vec{B})\cdot\vec{l}​<br>$$</p>
+<p>$$<br>\varepsilon_i=-\dfrac{d\Phi_m}{dt}<br>$$</p>
+<p>适用于在垂直于磁场平面内匀速转动的导线：$\varepsilon_i=\dfrac{1}{2}B\omega l^2$</p>
+<h5 id="感生电动势"><a href="#感生电动势" class="headerlink" title="感生电动势"></a>感生电动势</h5><p>$$<br>\oint_s\vec{E_i}\cdot d\vec{l}=-\int_s\dfrac{\partial\vec{B}}{\partial t}\cdot d\vec{S}<br>$$</p>
+<p>绕N匝长直螺线管中，变化电流产生的磁场为<br>$$<br>B=\mu_0NI<br>$$</p>
+<p>无限长直导线，产生的磁场为<br>$$<br>B=\dfrac{\mu_0 I}{2\pi r}<br>$$<br>其中，$r$为距离。</p>
+<h5 id="自感"><a href="#自感" class="headerlink" title="自感"></a>自感</h5><p>$$<br>\varepsilon_L=-\dfrac{d(N\Phi_m)}{dt}=-L\dfrac{dI}{dt}<br>$$</p>
+<h5 id="互感"><a href="#互感" class="headerlink" title="互感"></a>互感</h5><p>$$<br>\varepsilon_L=-M\dfrac{dI}{dt},<br>$$</p>
+<p>$$<br>M=\dfrac{N\Phi_m}{I}<br>$$</p>
+<h5 id="线圈的磁能"><a href="#线圈的磁能" class="headerlink" title="线圈的磁能"></a>线圈的磁能</h5><p>$$<br>W_m=\dfrac{1}{2}LI^2<br>$$</p>
+<p>磁场能量密度：</p>
+<p>$$<br>\omega_m=\dfrac{1}{2}\dfrac{B^2}{\mu}=\dfrac{1}{2}\mu H^2=\dfrac{1}{2}BH<br>$$</p>
+<h4 id="位移电流"><a href="#位移电流" class="headerlink" title="位移电流"></a>位移电流</h4><p>位移电流密度：<br>$$<br>\vec{j_d}=\dfrac{d\vec{D}}{dt}<br>$$<br>位移电流强度：<br>$$<br>I=_d\dfrac{d\varphi_D}{dt}<br>$$<br>其中，$\varphi_D$为电位移矢量的通量。</p>
+<p>安培环路定律的一般形式：<br>$$<br>\oint_l\vec{H}\cdot d\vec{l}=\sum I_{0内}+\dfrac{d\varphi_d}{dt}<br>$$</p>
+
+        </div>
+
+        <blockquote class="post-copyright">
+    
+    <div class="content">
+        
+<span class="post-time">
+    Last updated: <time datetime="2020-08-03T00:46:38.845Z" itemprop="dateUpdated">2020-08-03 08:46:38</time>
+</span><br>
+
+
+        
+    </div>
+    
+    <footer>
+        <a href="ronpay.xyz">
+            <img src="/img/avatar.jpg" alt="Ronpay">
+            Ronpay
+        </a>
+    </footer>
+</blockquote>
+
+        
+<div class="page-reward">
+    <a id="rewardBtn" href="javascript:;" class="page-reward-btn waves-effect waves-circle waves-light">赏</a>
+</div>
+
+
+
+        <div class="post-footer">
+            
+	<ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Math/" rel="tag">Math</a></li></ul>
+
+
+            
+<div class="page-share-wrap">
+    
+
+<div class="page-share" id="pageShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/&title=《大学物理笔记》 — Ronpay's Blog&pic=ronpay.xyz/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/&title=《大学物理笔记》 — Ronpay's Blog&source=Talk is cheap, show me the code." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《大学物理笔记》 — Ronpay's Blog&url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/&via=ronpay.xyz" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+
+    <a href="javascript:;" id="shareFab" class="page-share-fab waves-effect waves-circle">
+        <i class="icon icon-share-alt icon-lg"></i>
+    </a>
+</div>
+
+
+
+        </div>
+    </div>
+
+    
+<nav class="post-nav flex-row flex-justify-between flex-row-reverse">
+  
+
+  
+    <div class="waves-block waves-effect next">
+      <a href="/2020/08/01/%E5%BE%AE%E7%A7%AF%E5%88%86II%E7%AC%94%E8%AE%B0/" id="post-next" class="post-nav-link">
+        <div class="tips">Next <i class="icon icon-angle-right icon-lg icon-pl"></i></div>
+        <h4 class="title">微积分II笔记</h4>
+      </a>
+    </div>
+  
+</nav>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+<div id="reward" class="page-modal reward-lay">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <h3 class="reward-title">
+        <i class="icon icon-quote-left"></i>
+        Thanks~
+        <i class="icon icon-quote-right"></i>
+    </h3>
+    <div class="reward-content">
+        
+        <div class="reward-code">
+            <img id="rewardCode" src="/img/alipay.jpg" alt="打赏二维码">
+        </div>
+        
+    </div>
+</div>
+
+
+
+</div>
+
+        <footer class="footer">
+    <div class="top">
+        
+
+        <p>
+            
+                <span><a href="/atom.xml" target="_blank" class="rss" title="rss"><i class="icon icon-lg icon-rss"></i></a></span>
+            
+            <span>This blog is licensed under a <a rel="license noopener" href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.</span>
+        </p>
+    </div>
+    <div class="bottom">
+        <p><span>Ronpay &copy; 2020</span>
+            <span>
+                
+                Power by <a href="http://hexo.io/" target="_blank">Hexo</a> Theme <a href="https://github.com/yscoder/hexo-theme-indigo" target="_blank">indigo</a>
+            </span>
+        </p>
+    </div>
+</footer>
+
+    </main>
+    <div class="mask" id="mask"></div>
+<a href="javascript:;" id="gotop" class="waves-effect waves-circle waves-light"><span class="icon icon-lg icon-chevron-up"></span></a>
+
+
+
+<div class="global-share" id="globalShare">
+    <ul class="reset share-icons">
+      <li>
+        <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/&title=《大学物理笔记》 — Ronpay's Blog&pic=ronpay.xyz/img/avatar.jpg" data-title="微博">
+          <i class="icon icon-weibo"></i>
+        </a>
+      </li>
+      <li>
+        <a class="weixin share-sns wxFab" href="javascript:;" data-title="微信">
+          <i class="icon icon-weixin"></i>
+        </a>
+      </li>
+      <li>
+        <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/&title=《大学物理笔记》 — Ronpay's Blog&source=Talk is cheap, show me the code." data-title=" QQ">
+          <i class="icon icon-qq"></i>
+        </a>
+      </li>
+      <li>
+        <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/" data-title=" Facebook">
+          <i class="icon icon-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《大学物理笔记》 — Ronpay's Blog&url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/&via=ronpay.xyz" data-title=" Twitter">
+          <i class="icon icon-twitter"></i>
+        </a>
+      </li>
+      <li>
+        <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/" data-title=" Google+">
+          <i class="icon icon-google-plus"></i>
+        </a>
+      </li>
+    </ul>
+ </div>
+
+
+<div class="page-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAN4AAADeCAAAAAB3DOFrAAACt0lEQVR42u3aQW7cMAwF0Nz/0inQVYHCzv+k1M7ieTUIxho9BTBpkl9f8fX9+/rz89/X+11Pf3la//3z4QsPDw9vtPX3Tb9vNLk3WaHdT3TQeHh4eNd4s4f10zE9bSLBvB99vmc8PDy8T+C9J7VJAp0w9keMh4eH9zm8PBHPiwizdBkPDw/vE3htQSEv487W3Bcs8PDw8O7xZg2w//v5en8PDw8Pb9RVz6+zYebU3vDw8PBu8PIS7WbUIC9GzArKP+wcDw8P7xpveHPJbsvHm7IvHh4e3j1ePvyUlyeSpDkPUXnr63F9PDw8vGu8WQF3VvDNyxn5CNcPgQEPDw/vKC8ftMq3nh/fJswUAwR4eHh4h3hnW1xt6twWgvP18fDw8G7w8h/YNKvywJCXjCM2Hh4e3gVem9Tui7abca7hceDh4eFd420KB+22To0pROEHDw8P7xqvbSa1owZtG6xNox+ReHh4eBd4baEhP44EuTmUvOSBh4eHd5aXJ8Ft+6o9iGRYoU7r8fDw8I7y2mb/LDluQ8gs5ET9PTw8PLw1Lw8AbWKd5LT7InI9H4GHh4e35uUv9rPiaR4k8l8sCh94eHh4/4SXb2Xf1G+PLP/1x8CAh4eHd4g3S5T314ZRvCvg4eHhHeVtihH58EE71JWEkPyw8PDw8G7wZm/uq8pxXBTefx8PDw/vBm/24J6185Nt5YMI9f8NDw8P7yivTZfbZtUqasWFiajigoeHh7fgfZdXfXLrAYI2IOHh4eHd5s2aVXm+2g4EtAHmWHMODw8Pr+QlwaDdeh5O8rJyG37w8PDwbvNm9c/84X44CY5bd3h4eHifw8sf0+0A1v7veHh4eJ/D26TR7Xfa9tvjynh4eHjXePkS7b2bb7al3lWtBQ8PD+/Mm34UPPKHfh5+khXaEQc8PDy8Ne8Xanv5PqQ2XYQAAAAASUVORK5CYII=" alt="微信分享二维码">
+</div>
+
+
+
+
+    <script src="//cdn.bootcss.com/node-waves/0.7.4/waves.min.js"></script>
+<script>
+var BLOG = { ROOT: '/', SHARE: true, REWARD: true };
+
+
+</script>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/main.min.js"></script>
+
+
+<div class="search-panel" id="search-panel">
+    <ul class="search-result" id="search-result"></ul>
+</div>
+<template id="search-tpl">
+<li class="item">
+    <a href="{path}" class="waves-block waves-effect">
+        <div class="title ellipsis" title="{title}">{title}</div>
+        <div class="flex-row flex-middle">
+            <div class="tags ellipsis">
+                {tags}
+            </div>
+            <time class="flex-col time">{date}</time>
+        </div>
+    </a>
+</li>
+</template>
+
+<script src="//unpkg.com/hexo-theme-material-indigo@latest/js/search.min.js" async></script>
+
+
+
+<!-- mathjax config similar to math.stackexchange -->
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+
+<script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" async></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

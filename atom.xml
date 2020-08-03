@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="ronpay.xyz/"/>
-  <updated>2020-08-01T13:10:44.525Z</updated>
+  <updated>2020-08-03T00:46:38.845Z</updated>
   <id>ronpay.xyz/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>大学物理笔记</title>
+    <link href="ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/"/>
+    <id>ronpay.xyz/2020/08/03/%E5%A4%A7%E5%AD%A6%E7%89%A9%E7%90%86%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-08-03T00:45:58.000Z</published>
+    <updated>2020-08-03T00:46:38.845Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="大学物理笔记"><a href="#大学物理笔记" class="headerlink" title="大学物理笔记"></a>大学物理笔记</h1><h2 id="力学"><a href="#力学" class="headerlink" title="力学"></a>力学</h2><h3 id="刚体力学"><a href="#刚体力学" class="headerlink" title="刚体力学"></a>刚体力学</h3><h4 id="力矩的瞬时效应——刚体转动定理"><a href="#力矩的瞬时效应——刚体转动定理" class="headerlink" title="力矩的瞬时效应——刚体转动定理"></a>力矩的瞬时效应——刚体转动定理</h4><p>转动惯量<br>$$<br>I=\int_V{r^2dm}=r^2m<br>$$</p><p>力矩<br>$$<br>\vec{M}=\vec{r}\times\vec{F}=I\vec{\beta}<br>$$<br>其中，$\beta$是角加速。</p><p>平行轴定理：<br>$$<br>I=I_c+ml^2<br>$$<br>其中，$I_c$是转轴过质心的转动惯量。$l$是与过质心转轴相距为$l$且与之平行的另一转轴。 </p><p>垂直轴定理：<br>$$<br>I=I_x+I_y<br>$$<br>即一个平面薄板刚体对垂直于平面的任一转轴的转动惯量，等于刚体对在平面内并与该垂直轴相交的任二正交轴转动惯量之和。 </p><h4 id="力矩的时间累积效应——角动量定理"><a href="#力矩的时间累积效应——角动量定理" class="headerlink" title="力矩的时间累积效应——角动量定理"></a>力矩的时间累积效应——角动量定理</h4><p>冲量矩:<br>$$<br>J=\int{Mdt}<br>$$<br>角动量：<br>$$<br>L=I\omega=mr\times{v}<br>$$<br>角动量守恒：当外力冲量矩的矢量和为零时，刚体的角动量保持不变，即<br>$$<br>I_2\omega_2=I_1\omega_1<br>$$</p><p>摩擦力矩的角动量不一定守恒。</p><p>在有心力作用下，角动量守恒。</p><p>所有有心力都是保守力，机械能守恒。</p><h4 id="力矩的空间累积效应——刚体的机械能守恒定律"><a href="#力矩的空间累积效应——刚体的机械能守恒定律" class="headerlink" title="力矩的空间累积效应——刚体的机械能守恒定律"></a>力矩的空间累积效应——刚体的机械能守恒定律</h4><p>力矩的功：$A=\int{Md\theta}$</p><p>动能：$E_k=\frac{1}{2}I\omega^2$</p><h3 id="振动力学"><a href="#振动力学" class="headerlink" title="振动力学"></a>振动力学</h3><p>振动方程$y(t)=Acos(\omega t-\phi)$</p><p>波动方程$\phi(x,t)=Acos[\omega(t-\dfrac{x}{v})+\varphi]=Acos(\omega t-\dfrac{\omega }{v}x+\varphi)=Acos(\omega t-kx+\phi)$</p><p>其中$k=\dfrac{\omega}{v}=\dfrac{2\pi}{\lambda}$</p><h2 id="电磁学"><a href="#电磁学" class="headerlink" title="电磁学"></a>电磁学</h2><h3 id="符号详解"><a href="#符号详解" class="headerlink" title="符号详解"></a>符号详解</h3><p>电流密度矢量：$j=\dfrac{I}{S}$</p><p>电位移矢量：$D=\varepsilon E$</p><h3 id="静电场"><a href="#静电场" class="headerlink" title="静电场"></a>静电场</h3><p>$k=\dfrac{1}{4\pi\varepsilon_0}$</p><p>$e=1.602\times10^{-19}C$</p><p>$\vec{F}=\dfrac{1}{4\pi \varepsilon_0}\dfrac{Q_1Q_2}{r^2}\vec{r_0}$</p><p>电偶极子中垂线上任意点的场强：$\vec E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{-\vec p} {r^3}$。</p><p>线密度$\mu$，面密度$\sigma$，体密度$\rho$</p><p>电通量：通过某一面积的电力线条数</p><p>$\phi=\int_S\vec{E}\cdot d\vec{s}=\int_sEdscos\theta$</p><p>高斯定理：<br>$$<br>\oint_s\vec{E}\cdot d\vec{s}=\dfrac{1}{\varepsilon_0}\sum_{inside,i}q_i=\dfrac{1}{\varepsilon_0}\int_V \rho dV<br>$$<br>求场强：</p><ul><li>用库仑公式积分</li><li>用高斯公式算</li><li>结合上述两种方法</li></ul><p>常用电场强度：</p><ul><li>电偶极子中垂线上任意点的场强：$\vec E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{-\vec p} {r^3}$</li><li>电荷均匀分布的带电圆盘轴线上的电场强度：$E=\dfrac{\sigma}{2\varepsilon_0}(1-\dfrac{x}{r^2+x^2})$</li><li>电荷均匀分布的无限大平面轴线上的电场强度：$E=\dfrac{\sigma}{2\varepsilon_0}$</li><li>电荷均匀分布的带电圆环轴线上的电场强度：$E=\dfrac{1}{4\pi\varepsilon_0}\dfrac{qx}{(x^2+r^2)^{\frac{3}{2}}}$</li></ul><p>电势：$U_a=\dfrac{E_a}{q}=\int_a^b\vec{E}\cdot d\vec{l}$</p><p>求电势：</p><ul><li><p>点电荷微元求解法：$U_a=\int_a^b\dfrac{1}{4\pi \varepsilon_0}\dfrac{dq}{r}$</p></li><li><p>电势定义求解方法：场强沿积分路径积分</p></li></ul><p>静电平衡导体空腔场强分布：$E=\dfrac{\sigma}{\varepsilon_0}$</p><p><del>极化强度矢量：单位体积内分子电偶极矩的矢量和</del><br>$$<br>\vec{p}=\dfrac{\sum_i\vec{p_i}}{\Delta V}<br>$$<br><del>极化强度的实验定律：$\vec{p}=\varepsilon_0\chi_e\vec{E}$</del></p><p><del>$\chi_e$介质极化率</del></p><p>$\varepsilon$=$\varepsilon_0 \varepsilon_r$</p><p>其中，$\varepsilon_r$为相对介电常数</p><p><strong>~~介质中的高斯定理</strong>~~<br>$$<br>q_p=-\oiint_s\vec{P}\cdot d\vec{s}<br>$$</p><p>$$<br>\oint_s{(\vec{E_f}+\vec{E_p})}\cdot d\vec{s}=\dfrac{q_f+q_p}{\varepsilon_0}<br>$$</p><p><del>得到：</del><br>$$<br>\oint_s\vec{E}\cdot d\vec{s}=\dfrac{q_f}{\varepsilon_0}-\dfrac{1}{\varepsilon_0}\oint_s\vec{P}\cdot d\vec{s}<br>$$<br><strong>电位移矢量</strong></p><p>$\vec{D}=\varepsilon_0\vec{E}+\vec{P}$</p><p>$\vec{D}=\varepsilon_0\varepsilon_r\vec{E}=\varepsilon\vec{E}$<br>$$<br>\oint_S\vec{D}\cdot d\vec{S}=\sum_{S内}q_0<br>$$<br>称为电介质中的高斯定理 <strong>——</strong> 电位移矢量通过静电场中任意封闭曲面的通量等于曲面内自由电荷的代数和。</p><h3 id="稳恒电场"><a href="#稳恒电场" class="headerlink" title="稳恒电场"></a>稳恒电场</h3><h5 id="毕奥—萨伐尔定律"><a href="#毕奥—萨伐尔定律" class="headerlink" title="毕奥—萨伐尔定律"></a>毕奥—萨伐尔定律</h5><p>$$<br>d\vec{B}=\dfrac{\mu_0}{4\pi}\dfrac{Idl\times\vec{e_r}}{r^2}​<br>$$</p><p>其中，$Idl$表示电流方向的电流微元，$r$距离电流微元的位矢。</p><p>无限长直导线的磁场分布：$B=\dfrac{\mu_0 I}{4\pi a}{cos\theta_1-cos\theta_2}$</p><p>环形电流在轴线上的磁场分布：$B=\dfrac{\mu_0}{4\pi}\dfrac{2\pi I R^2}{(R^2+x^2)^\frac{3}{2}}$</p><p>无限长导线沿磁力线闭合回路积分值：$\oint_l\vec{B}\cdot d\vec{l}=\mu_0I$</p><h5 id="安培环路定律"><a href="#安培环路定律" class="headerlink" title="安培环路定律"></a>安培环路定律</h5><p>$$<br>\oint_l\vec{B}\cdot dl=\mu_0\sum I_内<br>$$</p><p>洛伦兹力<br>$$<br>\vec{F}=q\vec{v}\times\vec{B}<br>$$</p><p>安培定律<br>$$<br>\vec{F}=\int Id\vec{l}\times\vec{B}<br>$$</p><p>磁场对线圈力矩</p><p>$$<br>\vec{M}=\vec{p_m}\times\vec{B};M=p_m\cdot B\sin\varphi<br>$$</p><p>其中，$\vec{p_m}=IS\vec{n}$，$S$为线圈的面积。</p><h5 id="有磁介质的安培环路定理"><a href="#有磁介质的安培环路定理" class="headerlink" title="有磁介质的安培环路定理"></a>有磁介质的安培环路定理</h5><p>$$<br>\oint_l{\vec{H}\cdot d\vec{l}}=\sum I_{o内}<br>$$</p><p>其中，$\vec{H}=\dfrac{\vec{B}}{\mu_0}-\vec{M}$（磁场强度矢量）</p><h5 id="动生电动势"><a href="#动生电动势" class="headerlink" title="动生电动势"></a>动生电动势</h5><p>$$<br>\varepsilon_i=\int_a^b d\varepsilon_i=\int_a^b(\vec{v}\times\vec{B})\cdot\vec{l}​<br>$$</p><p>$$<br>\varepsilon_i=-\dfrac{d\Phi_m}{dt}<br>$$</p><p>适用于在垂直于磁场平面内匀速转动的导线：$\varepsilon_i=\dfrac{1}{2}B\omega l^2$</p><h5 id="感生电动势"><a href="#感生电动势" class="headerlink" title="感生电动势"></a>感生电动势</h5><p>$$<br>\oint_s\vec{E_i}\cdot d\vec{l}=-\int_s\dfrac{\partial\vec{B}}{\partial t}\cdot d\vec{S}<br>$$</p><p>绕N匝长直螺线管中，变化电流产生的磁场为<br>$$<br>B=\mu_0NI<br>$$</p><p>无限长直导线，产生的磁场为<br>$$<br>B=\dfrac{\mu_0 I}{2\pi r}<br>$$<br>其中，$r$为距离。</p><h5 id="自感"><a href="#自感" class="headerlink" title="自感"></a>自感</h5><p>$$<br>\varepsilon_L=-\dfrac{d(N\Phi_m)}{dt}=-L\dfrac{dI}{dt}<br>$$</p><h5 id="互感"><a href="#互感" class="headerlink" title="互感"></a>互感</h5><p>$$<br>\varepsilon_L=-M\dfrac{dI}{dt},<br>$$</p><p>$$<br>M=\dfrac{N\Phi_m}{I}<br>$$</p><h5 id="线圈的磁能"><a href="#线圈的磁能" class="headerlink" title="线圈的磁能"></a>线圈的磁能</h5><p>$$<br>W_m=\dfrac{1}{2}LI^2<br>$$</p><p>磁场能量密度：</p><p>$$<br>\omega_m=\dfrac{1}{2}\dfrac{B^2}{\mu}=\dfrac{1}{2}\mu H^2=\dfrac{1}{2}BH<br>$$</p><h4 id="位移电流"><a href="#位移电流" class="headerlink" title="位移电流"></a>位移电流</h4><p>位移电流密度：<br>$$<br>\vec{j_d}=\dfrac{d\vec{D}}{dt}<br>$$<br>位移电流强度：<br>$$<br>I=_d\dfrac{d\varphi_D}{dt}<br>$$<br>其中，$\varphi_D$为电位移矢量的通量。</p><p>安培环路定律的一般形式：<br>$$<br>\oint_l\vec{H}\cdot d\vec{l}=\sum I_{0内}+\dfrac{d\varphi_d}{dt}<br>$$</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;大学物理笔记&quot;&gt;&lt;a href=&quot;#大学物理笔记&quot; class=&quot;headerlink&quot; title=&quot;大学物理笔记&quot;&gt;&lt;/a&gt;大学物理笔记&lt;/h1&gt;&lt;h2 id=&quot;力学&quot;&gt;&lt;a href=&quot;#力学&quot; class=&quot;headerlink&quot; title=&quot;力学&quot;&gt;&lt;
+      
+    
+    </summary>
+    
+    
+    
+      <category term="Math" scheme="ronpay.xyz/tags/Math/"/>
+    
+  </entry>
   
   <entry>
     <title>微积分II笔记</title>
