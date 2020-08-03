@@ -29,7 +29,7 @@
 <meta property="og:description" content="(版权所有，禁止转载) (版权所有，禁止转载) (版权所有，禁止转载) (公式有点小问题，有空再修改) 第1章 集合论空集 空集是一切集合的子集。 空集值是绝对唯一的.  集合基数集合$A$中元素的数目称为集合$A$的基数，记为$|A|$。 m元子集如果一个集合$A$含有$n$个元素，则称集合$A$为$n$元集，称$A$的含有$m$个$(0≤m≤n)$元素的子集为$A$的$m$元子集。 幂集设$A">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-07-31T02:31:36.000Z">
-<meta property="article:modified_time" content="2020-08-03T00:55:38.209Z">
+<meta property="article:modified_time" content="2020-08-03T02:00:11.747Z">
 <meta property="article:author" content="Ronpay">
 <meta property="article:tag" content="Math">
 <meta name="twitter:card" content="summary">
@@ -312,8 +312,7 @@
 <li>当$A$上的函数$f$是双射时，称$f$为变换</li>
 </ul>
 <h4 id="定理"><a href="#定理" class="headerlink" title="定理"></a>定理</h4><p>设$A, B$是有限集合，且$|A| = |B|$，$f$是$A$到$B$的函数，则$f$是单射当且仅当$f$是满射。</p>
-<h4 id="函数的运算"><a href="#函数的运算" class="headerlink" title="函数的运算"></a>函数的运算</h4><p>考虑$f: A→B，g: B→C$是两个函数，则 $fog = { &lt;x, z&gt; | x∈A{∧}z∈C{∧}(\exists   y)(y∈B{∧}&lt;x, y&gt;∈f{∧}&lt;y, z&gt;∈g)$(公式无法渲染，忽略了)</p>
-<p>从$A$到$C$的函数，记为$fog: A→C$ ，称为函数$f$与$g$的复合函数。对任意$x∈A，fog(x) = g(f(x))$。</p>
+<h4 id="函数的运算"><a href="#函数的运算" class="headerlink" title="函数的运算"></a>函数的运算</h4><p>考虑$f: A→B，g: B→C$是两个函数，则 $fog = { &lt;x, z&gt; | x∈A{∧}z∈C{∧}(\exists   y)(y∈B{∧}&lt;x, y&gt;∈f{∧}&lt;y, z&gt;∈g)}$从$A$到$C$的函数，记为$fog: A→C$ ，称为函数$f$与$g$的复合函数。对任意$x∈A，fog(x) = g(f(x))$。</p>
 <h4 id="定理-1"><a href="#定理-1" class="headerlink" title="定理"></a>定理</h4><p>若$f$是$A$到$B$的双射，则$f$的逆函数$f^{-1}$也是$B$到$A$的双射。</p>
 <h3 id="第9章-图"><a href="#第9章-图" class="headerlink" title="第9章 图"></a>第9章 图</h3><h4 id="特殊图"><a href="#特殊图" class="headerlink" title="特殊图"></a>特殊图</h4><ul>
 <li>仅由孤立结点组成的图称为<strong>零图</strong>(Null Graph)</li>
@@ -339,7 +338,7 @@
 <h4 id="结点的度数与握手定理"><a href="#结点的度数与握手定理" class="headerlink" title="结点的度数与握手定理"></a>结点的度数与握手定理</h4><p>对于图$G = &lt;V, E&gt;$，度数为$1$的结点称为<strong>悬挂结点</strong>(Hanging Point)，以悬挂结点为端点的边称为<strong>悬挂边</strong>(Hanging Edge)。 </p>
 <h5 id="握手定理"><a href="#握手定理" class="headerlink" title="握手定理"></a>握手定理</h5><p>图中结点度数的总和等于边数的二倍，即设图G $= &lt;V, E&gt;$，则有<br>$$<br>\sum_{v\in V}deg(v)=2|E|<br>$$</p>
 <h5 id="推论"><a href="#推论" class="headerlink" title="推论"></a>推论</h5><p>图中度数为奇数的结点个数为偶数。</p>
-<h3 id="第11章-特殊图"><a href="#第11章-特殊图" class="headerlink" title="第11章 特殊图"></a>第11章 特殊图</h3><h4 id="欧拉图"><a href="#欧拉图" class="headerlink" title="欧拉图"></a>欧拉图</h4><p>设G是无孤立结点的图，若存在一条通路(回路)，经过图中每边一次且仅一次，则称此通路(回路)为该图的一条欧拉通路(回路)(Eulerian Entry/Circuit)。具有欧拉回路的图称为欧拉图(Eulerian Graph)。</p>
+<h3 id="第11章-特殊图"><a href="#第11章-特殊图" class="headerlink" title="第11章 特殊图"></a>第11章 特殊图</h3><h4 id="欧拉图"><a href="#欧拉图" class="headerlink" title="欧拉图"></a>欧拉图</h4><p>设$G$是无孤立结点的图，若存在一条通路(回路)，经过图中每边一次且仅一次，则称此通路(回路)为该图的一条欧拉通路(回路)(Eulerian Entry/Circuit)。具有欧拉回路的图称为欧拉图(Eulerian Graph)。</p>
 <p>规定：平凡图为欧拉图。<br>以上定义既适合无向图，又适合有向图。 </p>
 <h4 id="欧拉图的判定"><a href="#欧拉图的判定" class="headerlink" title="欧拉图的判定"></a>欧拉图的判定</h4><p>定理11.2.1  无向图$G = &lt;V, E&gt;$具有一条欧拉通路，当且仅当$G$是连通的，且仅有零个或两个奇度数结点。规定：平凡图为欧拉图。以上定义既适合无向图，又适合有向图。</p>
 <p>定理11.2.2 有向图$G$具有欧拉通路，当且仅当$G$是连通的，且除了两个结点以外，其余结点的入度等于出度，而这两个例外的结点中，一个结点的入度比出度大1，另一个结点的出度比入度大1。</p>
@@ -347,8 +346,8 @@
 <p>其中，$p$表示连通分量的个数。</p>
 <ol>
 <li>求欧拉图$G = &lt;V, E&gt;$的欧拉回路的Fleury算法：<br>任取$v_0∈V，令P_0 = v_0，i = 0$；</li>
-<li>按下面的方法从$E-{e1, e2, …, ei}$中选取$ei+1$：要求：<br>$ei+1$与$vi$相关联；<br>除非无别的边可选取，否则$ei+1$不应该为<br>$  G’ = G - {e1, e2, …, ei}$中的桥；</li>
-<li>将边$ei+1$加入通路$P0$中，令<br>$P0 = v0e1v1e2…eiviei+1vi+1，   i = i+1$；</li>
+<li>按下面的方法从$E-{e_1, e_2, …, e_i}$中选取$e_{i+1}$：要求：<br>$e_{i+1}$与$v_i$相关联；<br>除非无别的边可选取，否则$e_{i+1}$不应该为<br>$  G’ = G - {e_1, e_2, …, e_i}$中的桥；</li>
+<li>将边$e_{i+1}$加入通路$P_0$中，令<br>$P_0 = v0e1v1e2…eivie_{i+1}v_{i+1}，   i = i+1$；</li>
 <li>如果$i = |E|$，结束，否则转(2)。</li>
 </ol>
 <p>“<strong>一笔画问题</strong>”本质上就是一个无向图是否存在欧拉通路(回路)的问题。</p>
@@ -360,14 +359,14 @@
 <p>定理11.3.2  设$G = &lt;V, E&gt;$是具有$n$个结点的简单无向图。如果对任意两个不相邻的结点$u, v∈V$，均有$deg(u) + deg(v) ≥ n - 1$,则$G$中存在哈密顿通路。</p>
 <p>推论11.3.2  设$G = &lt;V, E&gt;$是具有$n$个结点的简单无向图。如果对任意两个不相邻的结点$u, v∈V$，均有$deg(u) + deg(v) ≥ n$,则$G$中存在哈密顿回路。</p>
 <p>推论11.3.3  设$G = &lt;V, E&gt;$是具有$n$个结点的简单无向图，$n ≥ 3$。如果对任意$v∈V$，均有$deg(v) ≥ n/2$，则$G$是哈密顿图。</p>
-<h4 id="偶图"><a href="#偶图" class="headerlink" title="偶图"></a>偶图</h4><p>定义11.4.1  若无向图$G = &lt;V, E&gt;$的结点集$V$能够划分为两个子集$V1, V2$，满足$V1∩V2 = Φ$，$且V1∪V2 = V$，使得$G$中任意一条边的两个端点，一个属于$V1$，另一个属于$V2$，则称$G$为偶图(Bipartite Graph)或二分图(Bigraph)。$V1$和$V2$称为互补结点子集，偶图通常记为$G=&lt;V1, E, V2&gt;$。</p>
-<p>定义11.4.2  在偶图$G = &lt;V1, E, V2&gt;$中，若$V1$中的每个结点与$V2$中的每个结点都有且仅有一条边相关联，则称偶图$G$为完全偶图(Complete Bipartite Graph)或完全二分图(Complete Bigraph)，记为$Ki, j$，其中，$i = |V1|，j = |V2|$。</p>
+<h4 id="偶图"><a href="#偶图" class="headerlink" title="偶图"></a>偶图</h4><p>定义11.4.1  若无向图$G = &lt;V, E&gt;$的结点集$V$能够划分为两个子集$V_1, V_2$，满足$V_1∩V_2 = Φ$，$且V_1∪V_2 = V$，使得$G$中任意一条边的两个端点，一个属于$V_1$，另一个属于$V_2$，则称$G$为偶图(Bipartite Graph)或二分图(Bigraph)。$V_1$和$V_2$称为互补结点子集，偶图通常记为$G=&lt;V_1, E, V_2&gt;$。</p>
+<p>定义11.4.2  在偶图$G = &lt;V_1, E, V_2&gt;$中，若$V_1$中的每个结点与$V_2$中的每个结点都有且仅有一条边相关联，则称偶图$G$为完全偶图(Complete Bipartite Graph)或完全二分图(Complete Bigraph)，记为$K_{i, j}$，其中，$i = |V_1|，j = |V_2|$。（即第一个集合中的所有顶点都与第二个集合中的所有顶点相连）</p>
 <p>偶图的判断</p>
 <p>定理11.4.1  无向图$G = &lt;V, E&gt;$为偶图的充分必要条件是$G$的所有回路的长度均为偶数。</p>
 <p>一般：我们常使用它的逆否命题来判断一个图不是偶图：无向图$G$不是偶图的充分必要条件是$G$中存在长度为奇数的回路。</p>
-<h4 id="匹配"><a href="#匹配" class="headerlink" title="匹配"></a>匹配</h4><p>定义11.4.2  在偶图$G = &lt;V1, E, V2$&gt;中，$V1 = {v1, v2, …, vq}$，若存在$E$的子集E’ = {(v1, v1’)，(v2, v2’)，…，(vq, vq’)，其中$v1’, v2’, …, vq’ $是$V2$中的$q$个不同的结点}，则称$G$的子图$G’ = &lt;V1, E’, V2&gt;$为从$V1$到$V2$的一个完全匹配(Complete Matching)，简称匹配。</p>
-<p>定理11.4.2 (霍尔定理)  偶图$G = &lt;V1, E, V2&gt;$中存在从$V1$到$V2$的匹配的充分必要条件是$V1$中任意$k$个结点至少与$V2$中的$k$个结点相邻，$k = 1, 2, …, |V1|$.定理11.4.2中的条件通常称为相异性条件(Diversity Condition)。</p>
-<p>定理11.4.3  设$G = &lt;V1,E,V2&gt;$是一个偶图。如果满足条件<br>      （1）$V1$中每个结点至少关联$t$条边；<br>      （2）$V2$中每个结点至多关联$t$条边；<br>则$G$中存在从$V1$到$V2$的匹配。其中$t$为正整数。</p>
+<h4 id="匹配"><a href="#匹配" class="headerlink" title="匹配"></a>匹配</h4><p>定义11.4.2  在偶图$G = &lt;V_1, E, V_2$&gt;中，$V_1 = {v_1, v_2, …, v_q}$，若存在$E$的子集$E’ = {(v_1, v_1’)，(v_2, v_2’)，…，(v_q, v_q’)}$，其中$v1’, v2’, …, vq’ $是$V2$中的$q$个不同的结点}，则称$G$的子图$G’ = &lt;V_1, E’, V_2&gt;$为从$V_1$到$V_2$的一个完全匹配(Complete Matching)，简称匹配。</p>
+<p>定理11.4.2 (霍尔定理)  偶图$G = &lt;V_1, E, V_2&gt;$中存在从$V_1$到$V_2$的匹配的充分必要条件是$V_1$中任意$k$个结点至少与$V_2$中的$k$个结点相邻，$k = 1, 2, …, |V_1|$.定理11.4.2中的条件通常称为相异性条件(Diversity Condition)。</p>
+<p>定理11.4.3  设$G = &lt;V_1,E,V_2&gt;$是一个偶图。如果满足条件<br>      （1）$V_1$中每个结点至少关联$t$条边；<br>      （2）$V_2$中每个结点至多关联$t$条边；<br>则$G$中存在从$V_1$到$V_2$的匹配。其中$t$为正整数。</p>
 <h4 id="平面图"><a href="#平面图" class="headerlink" title="平面图"></a>平面图</h4><p>如果能把一个无向图$G$的所有结点和边画在平面上，使得任何两边除公共结点外没有其他交叉点，则称$G$为平面图(Plane Graph)，否则称$G$为非平面图(Nonplanar Graph)。</p>
 <h4 id="欧拉公式"><a href="#欧拉公式" class="headerlink" title="欧拉公式"></a>欧拉公式</h4><ul>
 <li>由边所包围的其内部不包含图的结点和边的区域，称为$G$的一个面(Surface)</li>
@@ -384,8 +383,8 @@
 <p>推论11.5.2  设$G$是一个$(n, m)$简单连通平面图，若每个面的次数至少为$k (k ≥ 3)$，则有 $m\leq\dfrac{k}{k-2}(n-2)$</p>
 <p>完全图$K_5$，$k_{3,3}$是非平面图。</p>
 <h4 id="库拉托夫斯基定理"><a href="#库拉托夫斯基定理" class="headerlink" title="库拉托夫斯基定理"></a>库拉托夫斯基定理</h4><p>定理11.5.3(库拉托夫斯基定理)  一个图是平面图的充分必要条件是它的任何子图都不可能收缩为$K5$或$K3, 3$。</p>
-<p>推论11.5.3  一个图是非平面图的充分必要条件是它存在一个能收缩为$K5$或$K3, 3$的子图。</p>
-<p>$K5$和$K3,3$称为库拉托夫斯基图(Kuratowski Graph)。</p>
+<p>推论11.5.3  一个图是非平面图的充分必要条件是它存在一个能收缩为$K_5$或$K_{3, 3}$的子图。</p>
+<p>$K_5$和$K_{3,3}$称为库拉托夫斯基图(Kuratowski Graph)。</p>
 <h2 id="离散数学题型笔记"><a href="#离散数学题型笔记" class="headerlink" title="离散数学题型笔记"></a>离散数学题型笔记</h2><h3 id="选择题"><a href="#选择题" class="headerlink" title="选择题"></a>选择题</h3><h3 id="计算题"><a href="#计算题" class="headerlink" title="计算题"></a>计算题</h3><h4 id="主析取范式和主合取范式"><a href="#主析取范式和主合取范式" class="headerlink" title="主析取范式和主合取范式"></a>主析取范式和主合取范式</h4><p>进行化简。</p>
 <p>通过添加P∧P，P∨P，来凑取。</p>
 <p>求得一个可以推下一个。</p>
@@ -394,8 +393,8 @@
 <p>证明符号：</p>
 <ul>
 <li>P：条件； </li>
-<li>T，，，I：由→推理得到；</li>
-<li>T，，，E：有蕴涵式可得；</li>
+<li>T，序号，序号，I：由→推理得到；</li>
+<li>T，序号，序号，E：有蕴涵式可得；</li>
 <li>P（附加前提）：附加条件；</li>
 <li>CP：使用附加前提要用CP规则；</li>
 <li>US：去任意量词</li>
@@ -411,7 +410,7 @@
     <div class="content">
         
 <span class="post-time">
-    Last updated: <time datetime="2020-08-03T00:55:38.209Z" itemprop="dateUpdated">2020-08-03 08:55:38</time>
+    Last updated: <time datetime="2020-08-03T02:00:11.747Z" itemprop="dateUpdated">2020-08-03 10:00:11</time>
 </span><br>
 
 
