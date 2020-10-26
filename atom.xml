@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="ronpay.xyz/"/>
-  <updated>2020-08-07T01:47:57.774Z</updated>
+  <updated>2020-10-26T11:37:11.680Z</updated>
   <id>ronpay.xyz/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>四轴飞行器——基本蓝牙通讯</title>
+    <link href="ronpay.xyz/2020/10/26/%E5%9B%9B%E8%BD%B4%E9%A3%9E%E8%A1%8C%E5%99%A8%E2%80%94%E2%80%94%E5%9F%BA%E6%9C%AC%E8%93%9D%E7%89%99%E9%80%9A%E8%AE%AF/"/>
+    <id>ronpay.xyz/2020/10/26/%E5%9B%9B%E8%BD%B4%E9%A3%9E%E8%A1%8C%E5%99%A8%E2%80%94%E2%80%94%E5%9F%BA%E6%9C%AC%E8%93%9D%E7%89%99%E9%80%9A%E8%AE%AF/</id>
+    <published>2020-10-26T11:40:17.405Z</published>
+    <updated>2020-10-26T11:37:11.680Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="蓝牙"><a href="#蓝牙" class="headerlink" title="蓝牙"></a>蓝牙</h1><h2 id="引入"><a href="#引入" class="headerlink" title="引入"></a>引入</h2><p>蓝牙（英语：Bluetooth），一种无线通讯技术标准，用来让固定与移动设备，在短距离间交换资料，以形成个人局域网（PAN）。其使用短波特高頻（UHF）无线电波，经由2.4至2.485 GHz的ISM频段来进行通信。</p><p>BLE (<strong>Bluetooth Low Energy</strong>)，蓝牙低功耗，BLE较传统蓝牙具有传输速度更快，覆盖范围更广，安全性更高，延迟更短，耗电低等优点。</p><p>高速蓝牙主攻数据交换与传输，速度极限可达24Mbps，为传统蓝牙8倍;<br>传统蓝牙则以信息沟通、设备连接为重点，传输速度为1～3Mbps，距离10米或100米;<br>蓝牙低功耗顾名思义，以不需占用太多带宽的设备连接为主对穿戴式设备(如手表、体育健身/医疗保健产品)或工业自动化之低耗电需求.</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p><strong>数据透传</strong></p><p>蓝牙模块可以通过串口（SPI、IIC）和MCU控制设备进行数据传输。蓝牙模块可以做为主机和从机。主机就是能够搜索别的蓝牙模块并主动建立连接(也可以被其他蓝牙搜索并连接)，从机则不能主动建立连接，只能等别人连接自己。</p><p><img src="https://pic2.zhimg.com/80/v2-af368f083b717398359c5ad6613b2b35_720w.jpg" alt="img"></p><h2 id="模式"><a href="#模式" class="headerlink" title="模式"></a>模式</h2><blockquote><p>AT指令：AT指令是应用于终端设备与PC或移动端应用之间的连接与通信的指令。AT 即Attention。</p></blockquote><p>透传模式：即普通的串口透明传输,蓝牙通到数据后转发至串口，同时也转发串口收到的数据到远端蓝牙。</p><p>远程配置模式：在此模式下，远端蓝牙可以使用 AT 指令设置模块信息，还可以将不是以“AT”开头，每包数据量不大于 20 字节的数据传送给模块。</p><p><strong>出厂设置</strong>：9600, N, 8, 1; 从模式,透传+远程配置模式</p><h2 id="指令模式"><a href="#指令模式" class="headerlink" title="指令模式"></a>指令模式</h2><p>打开串口后，发送大写 AT(AT 后没有\r\n 符号)，若返回 OK，说明配置成功。</p><p>设置 AT 指令必须在蓝牙模块未连接或断开链接时才可以（上电或配对后都可以，如果是连接状态，串口输入的数据将会直接发送到远端蓝牙设备串口输出管脚，此时只需要断开连接既可）。</p><p><strong>测试或断开连接指令</strong>：</p><p>指令：AT    应答：OK</p><p>设置工作模式</p><table><thead><tr><th>指令</th><th>应答</th><th>参数</th></tr></thead><tbody><tr><td>查询：AT+MODE?</td><td>OK+ Get:[P1]</td><td>无</td></tr><tr><td>设置：AT+MODE[P1]</td><td>OK+Set:[P1]</td><td>0: 透传模式<br>1: 透传+远程配置模式<br>Default: 0</td></tr></tbody></table><p>查询、设置波特率</p><table><thead><tr><th>指令</th><th>应答</th><th>参数</th></tr></thead><tbody><tr><td>查询：AT+BAUD?</td><td>OK+Get:[P1]</td><td>无</td></tr><tr><td>设置：AT+BAUD[P1]</td><td>OK+Set:[P1]</td><td>P1：0～8<br>0=9600;1=19200;<br>2=38400;3=57600;<br>4=115200;5=4800;<br>6=2400;7=1200;<br>8=230400;<br>Default：0（9600）</td></tr></tbody></table><h1 id="串口通讯配置"><a href="#串口通讯配置" class="headerlink" title="串口通讯配置"></a>串口通讯配置</h1><p>232与TTL区别：</p><p>电平区别：<br>TTL电平一般从单片机或者直接从芯片中出来高电平一般5V或者3.3V<br>RS-232电平，以-15V表示1，+15V表示0，与TTL逻辑相反<br>其中：232一般用于工业设备，容错能力强。</p><h2 id="串口通讯"><a href="#串口通讯" class="headerlink" title="串口通讯"></a>串口通讯</h2><p>发送设备和接收设备，在协议层上，要规定了数据包的内容，(解释：通讯双方的数据包格式要约定一致才能正常收发数据)。</p><p>数据包的格式：波特率，通讯的起始和停止信号，有效数据，数据检验。。</p><blockquote><p>在<a href="https://zh.wikipedia.org/wiki/电子" target="_blank" rel="noopener">电子</a><a href="https://zh.wikipedia.org/wiki/通訊" target="_blank" rel="noopener">通讯</a>领域，<strong>波特</strong>（Baud）即<strong>调制速率</strong>，指的是有效数据讯号调制载波的速率，即单位时间内<a href="https://zh.wikipedia.org/wiki/载波" target="_blank" rel="noopener">载波</a>调制状态变化的次数。它是对<a href="https://zh.wikipedia.org/wiki/符号" target="_blank" rel="noopener">符号</a>传输速率的一种度量，1波特即指每秒传输1个符号，而透过不同的调制方式，可以在一个码元符号上负载多个bit位讯号。<a href="https://zh.wikipedia.org/wiki/波特率#cite_note-1" target="_blank" rel="noopener">[1]</a>“波特”（Baud）本身已是速率，所以不需要写成 Baud Rate（Rate 是赘字）。单位“波特”本身就已经是代表每秒的调制数，以“波特每秒”（Baud per second）为单位是一种常见的错误，但是在一般中文口语化的沟通上还是常以“<strong>波特率</strong>”来描述“<strong>波特</strong>”（Baud）。</p></blockquote><p>波特率：即调制速率，<del>每个码元的长度</del>（波特率指数据信号对载波的调制速率，它用单位时间内载波调制状态改变次数来表示，单位为波特。）<br>停止信号：数据包的起始信号由一个逻辑 0 的数据位表示，而数据包的停止信号可由 0.5、1、1.5 或 2 个逻辑 1 的数据位表示.<br>有效数据：5、6、7 或 8 位长。<br>数据校验：奇校验(odd)、偶校验(even)、0 校验(space)、1 校验(mark)以及无校验(no parity)(解释：数据通信相对更容易受到外部干扰导致传输数据出现偏差，可以在传输过程加上校验位来解决这个问题)</p><p>TX：发送数据输出引脚。<br>RX：接收数据输入引脚。</p><p>USART 的功能引脚，查手册。英文版数据手册P39</p><figure class="highlight c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="class"><span class="keyword">struct</span> &#123;</span></span><br><span class="line">    <span class="keyword">uint32_t</span> USART_BaudRate; <span class="comment">// 波特率</span></span><br><span class="line">    <span class="keyword">uint16_t</span> USART_WordLength; <span class="comment">// 字长</span></span><br><span class="line">    <span class="keyword">uint16_t</span> USART_StopBits; <span class="comment">// 停止位</span></span><br><span class="line">    <span class="keyword">uint16_t</span> USART_Parity; <span class="comment">// 校验位</span></span><br><span class="line">    <span class="keyword">uint16_t</span> USART_Mode; <span class="comment">// USART 模式 USART_Mode_Rx 和 USART_Mode_Tx</span></span><br><span class="line">    <span class="keyword">uint16_t</span> USART_HardwareFlowControl; <span class="comment">// 硬件流控制</span></span><br><span class="line">&#125; USART_InitTypeDef;</span><br></pre></td></tr></table></figure><h2 id="引脚复用"><a href="#引脚复用" class="headerlink" title="引脚复用"></a>引脚复用</h2><p>每个 GPIO 都可以作为多个外设的特殊功能引脚，我们只能从中选择一个使用，这时就通过 GPIO 引脚复用功能配置(GPIO_PinAFConfig)函数实现复用功能引脚的连接。</p><p>GPIO_PinAFConfig 函数接收三个参数，第一个参数为 GPIO 端口，比如 GPIOA；第二个参数是指定要复用的引脚号，比如 GPIO_PinSource10；第三个参数是选择复用外设，比如 GPIO_AF_USART1。</p><h2 id="中断控制"><a href="#中断控制" class="headerlink" title="中断控制"></a>中断控制</h2><p>优先级选择？(配置 USART 作为中断源,因为本实验没有使用其他中断，对优先级什么具体要求)</p><p>程序用到 USART 接收中断，需要配置 NVIC，这里调用 <code>NVIC_Configuration</code> 函数完成配置。配置 NVIC 就可以调用 <code>USART_ITConfig</code> 函数使能 USART 接收中断。</p><p>(USART 有多个中断请求事件，如USART 数据接收这个中断事件)当使用同步模式时需要配置 SCLK 引脚输出脉冲的属性，标准库使用一个时钟初始化<br>结构体 USART_ClockInitTypeDef 来设置，因此该结构体内容也只有在同步模式才需要设置。</p><h2 id="一些函数"><a href="#一些函数" class="headerlink" title="一些函数"></a>一些函数</h2><p>通过使用 <code>USART_GetFlagStatus</code> 函数来获取 USART事件标志来实现发送完成功能等待，它接收两个参数，一个是 USART，一个是事件标志。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;蓝牙&quot;&gt;&lt;a href=&quot;#蓝牙&quot; class=&quot;headerlink&quot; title=&quot;蓝牙&quot;&gt;&lt;/a&gt;蓝牙&lt;/h1&gt;&lt;h2 id=&quot;引入&quot;&gt;&lt;a href=&quot;#引入&quot; class=&quot;headerlink&quot; title=&quot;引入&quot;&gt;&lt;/a&gt;引入&lt;/h2&gt;&lt;p&gt;蓝牙（
+      
+    
+    </summary>
+    
+    
+    
+  </entry>
   
   <entry>
     <title>大学物理笔记</title>
